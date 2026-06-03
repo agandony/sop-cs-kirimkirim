@@ -39,12 +39,12 @@
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: #f8fafc;
-            font-size: 16px;
+            font-size: 14px; /* Ukuran font dasar diperkecil agar lebih compact */
         }
         /* Custom scrollbar */
         ::-webkit-scrollbar {
-            width: 10px;
-            height: 10px;
+            width: 8px;
+            height: 8px;
         }
         ::-webkit-scrollbar-track {
             background: #f1f5f9;
@@ -69,33 +69,33 @@
 
     <!-- Toast Notification (Floating) -->
     <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
-        <div class="bg-emerald-900 text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-4 border border-emerald-500/20 max-w-md">
-            <span class="bg-emerald-500 text-white rounded-full p-1.5 flex items-center justify-center shrink-0">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+        <div class="bg-emerald-900 text-white px-5 py-3.5 rounded-2xl shadow-2xl flex items-center gap-4 border border-emerald-500/20 max-w-sm">
+            <span class="bg-emerald-500 text-white rounded-full p-1 flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
             </span>
             <div class="flex flex-col">
-                <span class="font-extrabold text-base text-emerald-100">Berhasil Disalin!</span>
-                <span class="text-sm text-emerald-300">Tempel langsung (CTRL+V) di chat WhatsApp Anda</span>
+                <span class="font-extrabold text-sm text-emerald-100">Berhasil Disalin!</span>
+                <span class="text-xs text-emerald-300">Tempel langsung (CTRL+V) di chat WhatsApp Anda</span>
             </div>
         </div>
     </div>
 
     <!-- Header Section -->
     <header class="bg-white border-b border-slate-150 sticky top-0 z-30 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-4">
-                <div class="w-12 h-12 bg-brand-500 rounded-2xl flex items-center justify-center text-2xl shadow-lg shadow-brand-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-brand-500 rounded-xl flex items-center justify-center text-xl shadow-md shadow-brand-100">
                     🌸
                 </div>
                 <div>
-                    <h1 class="text-2xl font-extrabold text-slate-900 tracking-tight">Kirimkirim Florist</h1>
-                    <p class="text-xs text-brand-600 font-bold tracking-wider uppercase">SOP & Quick Reply Dashboard v2.1</p>
+                    <h1 class="text-lg font-extrabold text-slate-900 tracking-tight">Kirimkirim Florist</h1>
+                    <p class="text-[10px] text-brand-600 font-bold tracking-wider uppercase">SOP & Quick Reply Dashboard v2.1</p>
                 </div>
             </div>
             <div class="flex items-center gap-4">
                 <!-- Info Status Badge -->
-                <span class="hidden sm:inline-flex items-center px-4 py-1.5 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                    <span class="w-2.5 h-2.5 mr-2 bg-emerald-500 rounded-full animate-ping"></span>
+                <span class="hidden sm:inline-flex items-center px-3 py-1 rounded-full text-[11px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                    <span class="w-2 h-2 mr-1.5 bg-emerald-500 rounded-full animate-ping"></span>
                     CS Dashboard Active & Sinergis
                 </span>
             </div>
@@ -103,166 +103,166 @@
     </header>
 
     <!-- Main Container -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 grid grid-cols-1 lg:grid-cols-12 gap-8 w-full">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 grid grid-cols-1 lg:grid-cols-12 gap-6 w-full">
         
         <!-- LEFT COLUMN: Sticky Flow, Variables & Navigation (4 Cols) -->
-        <aside class="lg:col-span-4 space-y-6 lg:sticky lg:top-28 lg:h-[calc(100vh-9rem)] lg:overflow-y-auto pr-2">
+        <aside class="lg:col-span-4 space-y-5 lg:sticky lg:top-24 lg:h-[calc(100vh-7.5rem)] lg:overflow-y-auto pr-1">
             
             <!-- Global Variable Customizer -->
-            <div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-md space-y-5">
-                <div class="flex items-center gap-3">
-                    <span class="text-2xl">⚙️</span>
-                    <h2 class="font-extrabold text-slate-950 text-lg">Pengatur Variabel Otomatis</h2>
+            <div class="bg-white rounded-2xl p-5 border border-slate-100 shadow-md space-y-4">
+                <div class="flex items-center gap-2">
+                    <span class="text-xl">⚙️</span>
+                    <h2 class="font-extrabold text-slate-950 text-sm">Pengatur Variabel Otomatis</h2>
                 </div>
-                <p class="text-sm text-slate-500 leading-relaxed">
+                <p class="text-xs text-slate-500 leading-relaxed">
                     Data di bawah ini akan menggantikan placeholder di dalam template secara instan saat disalin.
                 </p>
-                <div class="space-y-4">
+                <div class="space-y-3">
                     <div>
-                        <label class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-2">Nama Customer (Sapaan)</label>
-                        <input type="text" id="var-customer" class="w-full text-base px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-all outline-none font-medium" placeholder="Contoh: Pak Budi / Kak Rina" value="">
-                        <p class="text-[11px] text-slate-400 mt-1">Kosongkan untuk otomatis memanggil "Kak".</p>
+                        <label class="block text-[11px] font-bold text-slate-600 uppercase tracking-wider mb-1">Nama Customer (Sapaan)</label>
+                        <input type="text" id="var-customer" class="w-full text-sm px-3.5 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-all outline-none font-medium" placeholder="Contoh: Pak Budi / Kak Rina" value="">
+                        <p class="text-[10px] text-slate-400 mt-1">Kosongkan untuk otomatis memanggil "Kak".</p>
                     </div>
                     <div>
-                        <label class="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-2">Detail Nomor Rekening Toko</label>
-                        <textarea id="var-rekening" rows="2" class="w-full text-base px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-all outline-none font-medium" placeholder="BCA 8012345678 a/n PT Kirim Kirim">BCA 123456789 a/n Kirimkirim Florist</textarea>
+                        <label class="block text-[11px] font-bold text-slate-600 uppercase tracking-wider mb-1">Detail Nomor Rekening Toko</label>
+                        <textarea id="var-rekening" rows="2" class="w-full text-sm px-3.5 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-all outline-none font-medium" placeholder="BCA 8012345678 a/n PT Kirim Kirim">BCA 123456789 a/n Kirimkirim Florist</textarea>
                     </div>
                 </div>
             </div>
 
             <!-- Flowchart Navigator (Interactive) -->
-            <div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-md space-y-4">
+            <div class="bg-white rounded-2xl p-5 border border-slate-100 shadow-md space-y-3">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-2">
-                        <span class="text-2xl">🗺️</span>
-                        <h2 class="font-extrabold text-slate-950 text-base">Alur Proses Pelayanan CS</h2>
+                        <span class="text-xl">🗺️</span>
+                        <h2 class="font-extrabold text-slate-950 text-sm">Alur Proses Pelayanan CS</h2>
                     </div>
-                    <span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full font-bold">12 Langkah</span>
+                    <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full font-bold">12 Langkah</span>
                 </div>
                 
-                <p class="text-xs text-slate-500">Klik salah satu langkah di bawah untuk langsung menuju template yang dicari.</p>
+                <p class="text-[11px] text-slate-500">Klik salah satu langkah di bawah untuk langsung menuju template yang dicari.</p>
 
                 <!-- Stepper Flow -->
-                <nav class="space-y-2 relative before:absolute before:left-5 before:top-2 before:bottom-2 before:w-0.5 before:bg-slate-100">
+                <nav class="space-y-1.5 relative before:absolute before:left-4 before:top-2 before:bottom-2 before:w-0.5 before:bg-slate-100">
                     
                     <!-- Step 1 -->
-                    <button onclick="scrollToStep('sec-greeting', 'step-1')" id="step-1" class="w-full flex items-center gap-3 p-3 rounded-2xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-sm">
-                        <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-sm font-bold shrink-0 transition-all border-2 border-white">1</div>
+                    <button onclick="scrollToStep('sec-greeting', 'step-1')" id="step-1" class="w-full flex items-center gap-2.5 p-2 rounded-xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-xs">
+                        <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-xs font-bold shrink-0 transition-all border-2 border-white">1</div>
                         <div class="flex-1 min-w-0">
-                            <p class="font-bold text-slate-800 truncate text-sm">Greeting Awal</p>
-                            <p class="text-xs text-slate-400 truncate">Menyapa & Gali Data</p>
+                            <p class="font-bold text-slate-800 truncate text-xs">Greeting Awal</p>
+                            <p class="text-[10px] text-slate-400 truncate">Menyapa & Gali Data</p>
                         </div>
-                        <span class="text-[11px] bg-slate-100 text-slate-600 font-mono px-2 py-0.5 rounded shrink-0">/halo</span>
+                        <span class="text-[10px] bg-slate-100 text-slate-600 font-mono px-1.5 py-0.5 rounded shrink-0">/halo</span>
                     </button>
 
                     <!-- Step 2 -->
-                    <button onclick="scrollToStep('sec-harga', 'step-2')" id="step-2" class="w-full flex items-center gap-3 p-3 rounded-2xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-sm">
-                        <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-sm font-bold shrink-0 transition-all border-2 border-white">2</div>
+                    <button onclick="scrollToStep('sec-harga', 'step-2')" id="step-2" class="w-full flex items-center gap-2.5 p-2 rounded-xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-xs">
+                        <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-xs font-bold shrink-0 transition-all border-2 border-white">2</div>
                         <div class="flex-1 min-w-0">
-                            <p class="font-bold text-slate-800 truncate text-sm">Tanya Harga Awal</p>
-                            <p class="text-xs text-slate-400 truncate">Gali Info Lokasi</p>
+                            <p class="font-bold text-slate-800 truncate text-xs">Tanya Harga Awal</p>
+                            <p class="text-[10px] text-slate-400 truncate">Gali Info Lokasi</p>
                         </div>
-                        <span class="text-[11px] bg-slate-100 text-slate-600 font-mono px-2 py-0.5 rounded shrink-0">/harga</span>
+                        <span class="text-[10px] bg-slate-100 text-slate-600 font-mono px-1.5 py-0.5 rounded shrink-0">/harga</span>
                     </button>
 
-                    <!-- Step 3 (NEW - Katalog) -->
-                    <button onclick="scrollToStep('sec-katalog', 'step-3')" id="step-3" class="w-full flex items-center gap-3 p-3 rounded-2xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-sm">
-                        <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-sm font-bold shrink-0 transition-all border-2 border-white">3</div>
+                    <!-- Step 3 (Katalog) -->
+                    <button onclick="scrollToStep('sec-katalog', 'step-3')" id="step-3" class="w-full flex items-center gap-2.5 p-2 rounded-xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-xs">
+                        <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-xs font-bold shrink-0 transition-all border-2 border-white">3</div>
                         <div class="flex-1 min-w-0">
-                            <p class="font-bold text-slate-800 truncate text-sm">Kirim Link Katalog</p>
-                            <p class="text-xs text-slate-400 truncate">Hybrid Katalog WA/Web</p>
+                            <p class="font-bold text-slate-800 truncate text-xs">Kirim Link Katalog</p>
+                            <p class="text-[10px] text-slate-400 truncate">Hybrid Katalog WA/Web</p>
                         </div>
-                        <span class="text-[11px] bg-slate-100 text-slate-600 font-mono px-2 py-0.5 rounded shrink-0">/katalog</span>
+                        <span class="text-[10px] bg-slate-100 text-slate-600 font-mono px-1.5 py-0.5 rounded shrink-0">/katalog</span>
                     </button>
 
-                    <!-- Step 4 (NEW - Kurasi) -->
-                    <button onclick="scrollToStep('sec-kurasi', 'step-4')" id="step-4" class="w-full flex items-center gap-3 p-3 rounded-2xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-sm">
-                        <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-sm font-bold shrink-0 transition-all border-2 border-white">4</div>
+                    <!-- Step 4 (Kurasi) -->
+                    <button onclick="scrollToStep('sec-kurasi', 'step-4')" id="step-4" class="w-full flex items-center gap-2.5 p-2 rounded-xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-xs">
+                        <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-xs font-bold shrink-0 transition-all border-2 border-white">4</div>
                         <div class="flex-1 min-w-0">
-                            <p class="font-bold text-slate-800 truncate text-sm">Kurasi 3 Model</p>
-                            <p class="text-xs text-slate-400 truncate">Cegah Choice Overload</p>
+                            <p class="font-bold text-slate-800 truncate text-xs">Kurasi 3 Model</p>
+                            <p class="text-[10px] text-slate-400 truncate">Cegah Choice Overload</p>
                         </div>
-                        <span class="text-[11px] bg-slate-100 text-slate-600 font-mono px-2 py-0.5 rounded shrink-0">/kurasi</span>
+                        <span class="text-[10px] bg-slate-100 text-slate-600 font-mono px-1.5 py-0.5 rounded shrink-0">/kurasi</span>
                     </button>
 
                     <!-- Step 5 -->
-                    <button onclick="scrollToStep('sec-rekomendasi', 'step-5')" id="step-5" class="w-full flex items-center gap-3 p-3 rounded-2xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-sm">
-                        <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-sm font-bold shrink-0 transition-all border-2 border-white">5</div>
+                    <button onclick="scrollToStep('sec-rekomendasi', 'step-5')" id="step-5" class="w-full flex items-center gap-2.5 p-2 rounded-xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-xs">
+                        <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-xs font-bold shrink-0 transition-all border-2 border-white">5</div>
                         <div class="flex-1 min-w-0">
-                            <p class="font-bold text-slate-800 truncate text-sm">Rekomendasi Produk</p>
-                            <p class="text-xs text-slate-400 truncate">Ekonomis / Menengah / Premium</p>
+                            <p class="font-bold text-slate-800 truncate text-xs">Rekomendasi Produk</p>
+                            <p class="text-[10px] text-slate-400 truncate">Ekonomis / Menengah / Premium</p>
                         </div>
-                        <span class="text-[11px] bg-slate-100 text-slate-600 font-mono px-2 py-0.5 rounded shrink-0">/150</span>
+                        <span class="text-[10px] bg-slate-100 text-slate-600 font-mono px-1.5 py-0.5 rounded shrink-0">/150</span>
                     </button>
 
                     <!-- Step 6 -->
-                    <button onclick="scrollToStep('sec-trust', 'step-6')" id="step-6" class="w-full flex items-center gap-3 p-3 rounded-2xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-sm">
-                        <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-sm font-bold shrink-0 transition-all border-2 border-white">6</div>
+                    <button onclick="scrollToStep('sec-trust', 'step-6')" id="step-6" class="w-full flex items-center gap-2.5 p-2 rounded-xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-xs">
+                        <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-xs font-bold shrink-0 transition-all border-2 border-white">6</div>
                         <div class="flex-1 min-w-0">
-                            <p class="font-bold text-slate-800 truncate text-sm">Bangun Trust</p>
-                            <p class="text-xs text-slate-400 truncate">Kelebihan & Garansi Foto</p>
+                            <p class="font-bold text-slate-800 truncate text-xs">Bangun Trust</p>
+                            <p class="text-[10px] text-slate-400 truncate">Kelebihan & Garansi Foto</p>
                         </div>
-                        <span class="text-[11px] bg-slate-100 text-slate-600 font-mono px-2 py-0.5 rounded shrink-0">/trust</span>
+                        <span class="text-[10px] bg-slate-100 text-slate-600 font-mono px-1.5 py-0.5 rounded shrink-0">/trust</span>
                     </button>
 
                     <!-- Step 7 -->
-                    <button onclick="scrollToStep('sec-pilih', 'step-7')" id="step-7" class="w-full flex items-center gap-3 p-3 rounded-2xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-sm">
-                        <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-sm font-bold shrink-0 transition-all border-2 border-white">7</div>
+                    <button onclick="scrollToStep('sec-pilih', 'step-7')" id="step-7" class="w-full flex items-center gap-2.5 p-2 rounded-xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-xs">
+                        <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-xs font-bold shrink-0 transition-all border-2 border-white">7</div>
                         <div class="flex-1 min-w-0">
-                            <p class="font-bold text-slate-800 truncate text-sm">Mengarahkan Pilihan</p>
-                            <p class="text-xs text-slate-400 truncate">Teknik Pilihan Terbatas</p>
+                            <p class="font-bold text-slate-800 truncate text-xs">Mengarahkan Pilihan</p>
+                            <p class="text-[10px] text-slate-400 truncate">Teknik Pilihan Terbatas</p>
                         </div>
-                        <span class="text-[11px] bg-slate-100 text-slate-600 font-mono px-2 py-0.5 rounded shrink-0">/pilih</span>
+                        <span class="text-[10px] bg-slate-100 text-slate-600 font-mono px-1.5 py-0.5 rounded shrink-0">/pilih</span>
                     </button>
 
                     <!-- Step 8 -->
-                    <button onclick="scrollToStep('sec-closing', 'step-8')" id="step-8" class="w-full flex items-center gap-3 p-3 rounded-2xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-sm">
-                        <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-sm font-bold shrink-0 transition-all border-2 border-white">8</div>
+                    <button onclick="scrollToStep('sec-closing', 'step-8')" id="step-8" class="w-full flex items-center gap-2.5 p-2 rounded-xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-xs">
+                        <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-xs font-bold shrink-0 transition-all border-2 border-white">8</div>
                         <div class="flex-1 min-w-0">
-                            <p class="font-bold text-slate-800 truncate text-sm">Formulir Closing</p>
-                            <p class="text-xs text-slate-400 truncate">Ambil Data Ucapan</p>
+                            <p class="font-bold text-slate-800 truncate text-xs">Formulir Closing</p>
+                            <p class="text-[10px] text-slate-400 truncate">Ambil Data Ucapan</p>
                         </div>
-                        <span class="text-[11px] bg-slate-100 text-slate-600 font-mono px-2 py-0.5 rounded shrink-0">/order</span>
+                        <span class="text-[10px] bg-slate-100 text-slate-600 font-mono px-1.5 py-0.5 rounded shrink-0">/order</span>
                     </button>
 
                     <!-- Step 9 -->
-                    <button onclick="scrollToStep('sec-invoice', 'step-9')" id="step-9" class="w-full flex items-center gap-3 p-3 rounded-2xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-sm">
-                        <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-sm font-bold shrink-0 transition-all border-2 border-white">9</div>
+                    <button onclick="scrollToStep('sec-invoice', 'step-9')" id="step-9" class="w-full flex items-center gap-2.5 p-2 rounded-xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-xs">
+                        <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-xs font-bold shrink-0 transition-all border-2 border-white">9</div>
                         <div class="flex-1 min-w-0">
-                            <p class="font-bold text-slate-800 truncate text-sm">Total Pembayaran</p>
-                            <p class="text-xs text-slate-400 truncate">Kirim Invoice + Rekening</p>
+                            <p class="font-bold text-slate-800 truncate text-xs">Total Pembayaran</p>
+                            <p class="text-[10px] text-slate-400 truncate">Kirim Invoice + Rekening</p>
                         </div>
-                        <span class="text-[11px] bg-slate-100 text-slate-600 font-mono px-2 py-0.5 rounded shrink-0">/invoice</span>
+                        <span class="text-[10px] bg-slate-100 text-slate-600 font-mono px-1.5 py-0.5 rounded shrink-0">/invoice</span>
                     </button>
 
                     <!-- Step 10 -->
-                    <button onclick="scrollToStep('sec-lunas', 'step-10')" id="step-10" class="w-full flex items-center gap-3 p-3 rounded-2xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-sm">
-                        <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-sm font-bold shrink-0 transition-all border-2 border-white">10</div>
+                    <button onclick="scrollToStep('sec-lunas', 'step-10')" id="step-10" class="w-full flex items-center gap-2.5 p-2 rounded-xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-xs">
+                        <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-xs font-bold shrink-0 transition-all border-2 border-white">10</div>
                         <div class="flex-1 min-w-0">
-                            <p class="font-bold text-slate-800 truncate text-sm">Konfirmasi Lunas</p>
-                            <p class="text-xs text-slate-400 truncate">Jadwalkan Produksi</p>
+                            <p class="font-bold text-slate-800 truncate text-xs">Konfirmasi Lunas</p>
+                            <p class="text-[10px] text-slate-400 truncate">Jadwalkan Produksi</p>
                         </div>
-                        <span class="text-[11px] bg-slate-100 text-slate-600 font-mono px-2 py-0.5 rounded shrink-0">/lunas</span>
+                        <span class="text-[10px] bg-slate-100 text-slate-600 font-mono px-1.5 py-0.5 rounded shrink-0">/lunas</span>
                     </button>
 
                     <!-- Step 11 -->
-                    <button onclick="scrollToStep('sec-foto', 'step-11')" id="step-11" class="w-full flex items-center gap-3 p-3 rounded-2xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-sm">
-                        <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-sm font-bold shrink-0 transition-all border-2 border-white">11</div>
+                    <button onclick="scrollToStep('sec-foto', 'step-11')" id="step-11" class="w-full flex items-center gap-2.5 p-2 rounded-xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-xs">
+                        <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-xs font-bold shrink-0 transition-all border-2 border-white">11</div>
                         <div class="flex-1 min-w-0">
-                            <p class="font-bold text-slate-800 truncate text-sm">Foto Hasil Jadi</p>
-                            <p class="text-xs text-slate-400 truncate">Foto Real Sebelum Kirim</p>
+                            <p class="font-bold text-slate-800 truncate text-xs">Foto Hasil Jadi</p>
+                            <p class="text-[10px] text-slate-400 truncate">Foto Real Sebelum Kirim</p>
                         </div>
-                        <span class="text-[11px] bg-slate-100 text-slate-600 font-mono px-2 py-0.5 rounded shrink-0">/foto</span>
+                        <span class="text-[10px] bg-slate-100 text-slate-600 font-mono px-1.5 py-0.5 rounded shrink-0">/foto</span>
                     </button>
 
                     <!-- Step 12 -->
-                    <button onclick="scrollToStep('sec-followup', 'step-12')" id="step-12" class="w-full flex items-center gap-3 p-3 rounded-2xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-sm">
-                        <div class="w-10 h-10 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-sm font-bold shrink-0 transition-all border-2 border-white">12</div>
+                    <button onclick="scrollToStep('sec-followup', 'step-12')" id="step-12" class="w-full flex items-center gap-2.5 p-2 rounded-xl border border-transparent hover:bg-slate-50 text-left transition-all relative z-10 text-slate-600 text-xs">
+                        <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-xs font-bold shrink-0 transition-all border-2 border-white">12</div>
                         <div class="flex-1 min-w-0">
-                            <p class="font-bold text-slate-800 truncate text-sm">Follow Up Calon Customer</p>
-                            <p class="text-xs text-slate-400 truncate">Hubungi Kembali Jeda 2-3 Jam</p>
+                            <p class="font-bold text-slate-800 truncate text-xs">Follow Up Calon Customer</p>
+                            <p class="text-[10px] text-slate-400 truncate">Hubungi Kembali Jeda 2-3 Jam</p>
                         </div>
-                        <span class="text-[11px] bg-slate-100 text-slate-600 font-mono px-2 py-0.5 rounded shrink-0">/followup</span>
+                        <span class="text-[10px] bg-slate-100 text-slate-600 font-mono px-1.5 py-0.5 rounded shrink-0">/followup</span>
                     </button>
 
                 </nav>
@@ -271,51 +271,51 @@
         </aside>
 
         <!-- RIGHT COLUMN: Templates Area & Playbook (8 Cols) -->
-        <main class="lg:col-span-8 space-y-12 pb-20">
+        <main class="lg:col-span-8 space-y-10 pb-20">
             
             <!-- ================= QUICK REPLY AREA (Search Bar is sticky ONLY inside here) ================= -->
-            <div class="relative space-y-8" id="quick-reply-area">
+            <div class="relative space-y-6" id="quick-reply-area">
                 
                 <!-- Search & Filter Bar (Sticky only within `#quick-reply-area`) -->
-                <div class="bg-white rounded-3xl p-5 border border-slate-100 shadow-md flex flex-col md:flex-row gap-4 items-center justify-between sticky top-[81px] z-20">
-                    <div class="relative w-full md:w-80">
-                        <input type="text" id="search-input" oninput="filterTemplates()" placeholder="Cari Quick Reply (Contoh: /harga, /followup)..." class="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-2xl text-sm focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-all outline-none">
-                        <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <div class="bg-white rounded-2xl p-4 border border-slate-100 shadow-md flex flex-col md:flex-row gap-3 items-center justify-between sticky top-[72px] z-20">
+                    <div class="relative w-full md:w-72">
+                        <input type="text" id="search-input" oninput="filterTemplates()" placeholder="Cari Quick Reply (Contoh: /harga, /followup)..." class="w-full pl-9 pr-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-all outline-none">
+                        <span class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                         </span>
                     </div>
-                    <div class="flex gap-2 overflow-x-auto w-full md:w-auto pb-1 md:pb-0 justify-start md:justify-end">
-                        <button onclick="filterCategory('all')" id="btn-cat-all" class="px-4 py-2 bg-brand-500 text-white rounded-xl text-xs font-bold transition-all whitespace-nowrap">Semua</button>
-                        <button onclick="filterCategory('pembuka')" id="btn-cat-pembuka" class="px-4 py-2 bg-slate-50 text-slate-600 hover:bg-slate-100 rounded-xl text-xs font-bold transition-all whitespace-nowrap">Pembuka</button>
-                        <button onclick="filterCategory('rekomendasi')" id="btn-cat-rekomendasi" class="px-4 py-2 bg-slate-50 text-slate-600 hover:bg-slate-100 rounded-xl text-xs font-bold transition-all whitespace-nowrap">Rekomendasi</button>
-                        <button onclick="filterCategory('transaksi')" id="btn-cat-transaksi" class="px-4 py-2 bg-slate-50 text-slate-600 hover:bg-slate-100 rounded-xl text-xs font-bold transition-all whitespace-nowrap">Transaksi & Closing</button>
+                    <div class="flex gap-1.5 overflow-x-auto w-full md:w-auto pb-1 md:pb-0 justify-start md:justify-end">
+                        <button onclick="filterCategory('all')" id="btn-cat-all" class="px-3 py-1.5 bg-brand-500 text-white rounded-lg text-[11px] font-bold transition-all whitespace-nowrap">Semua</button>
+                        <button onclick="filterCategory('pembuka')" id="btn-cat-pembuka" class="px-3 py-1.5 bg-slate-50 text-slate-600 hover:bg-slate-100 rounded-lg text-[11px] font-bold transition-all whitespace-nowrap">Pembuka</button>
+                        <button onclick="filterCategory('rekomendasi')" id="btn-cat-rekomendasi" class="px-3 py-1.5 bg-slate-50 text-slate-600 hover:bg-slate-100 rounded-lg text-[11px] font-bold transition-all whitespace-nowrap">Rekomendasi</button>
+                        <button onclick="filterCategory('transaksi')" id="btn-cat-transaksi" class="px-3 py-1.5 bg-slate-50 text-slate-600 hover:bg-slate-100 rounded-lg text-[11px] font-bold transition-all whitespace-nowrap">Transaksi & Closing</button>
                     </div>
                 </div>
 
                 <!-- List of Templates -->
-                <div id="templates-container" class="space-y-12">
+                <div id="templates-container" class="space-y-8">
 
                     <!-- TEMPLATE 1 — GREETING AWAL -->
-                    <section id="sec-greeting" data-category="pembuka" class="bg-white rounded-3xl p-6 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
-                        <div class="flex flex-wrap items-center justify-between gap-4 mb-4 pb-4 border-b border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <span class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-base">1</span>
+                    <section id="sec-greeting" data-category="pembuka" class="bg-white rounded-2xl p-5 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-3 mb-3 pb-3 border-b border-slate-100">
+                            <div class="flex items-center gap-2.5">
+                                <span class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-sm">1</span>
                                 <div>
-                                    <h3 class="font-extrabold text-slate-900 text-lg">Greeting Awal</h3>
-                                    <p class="text-xs text-slate-500">Sapa hangat, gali kebutuhan tanpa menanyakan budget secara mentah</p>
+                                    <h3 class="font-extrabold text-slate-900 text-sm sm:text-base">Greeting Awal</h3>
+                                    <p class="text-[11px] text-slate-500">Sapa hangat, gali kebutuhan tanpa menanyakan budget secara mentah</p>
                                 </div>
                             </div>
-                            <span class="px-3 py-1 bg-teal-50 text-teal-700 text-xs font-extrabold rounded-full uppercase tracking-wider">Kategori: Pembuka</span>
+                            <span class="px-2.5 py-0.5 bg-teal-50 text-teal-700 text-[10px] font-extrabold rounded-full uppercase tracking-wider">Kategori: Pembuka</span>
                         </div>
 
                         <!-- Trigger Box -->
-                        <div class="mb-4 bg-amber-50 border border-amber-100 rounded-2xl p-4 flex items-center justify-between text-sm">
+                        <div class="mb-3 bg-amber-50 border border-amber-100 rounded-xl p-3 flex items-center justify-between text-xs">
                             <span class="text-slate-600 font-medium">Gunakan Quick Reply WA:</span>
-                            <code class="bg-amber-100 text-amber-800 px-3 py-1.5 rounded-xl font-bold font-mono">/halo</code>
+                            <code class="bg-amber-100 text-amber-800 px-2 py-1 rounded-lg font-bold font-mono">/halo</code>
                         </div>
 
-                        <!-- Template Box -->
-                        <div class="relative bg-slate-50 rounded-2xl border border-slate-100 p-6 shadow-inner group">
+                        <!-- Template Box (Reduced font sizes) -->
+                        <div class="relative bg-slate-50 rounded-xl border border-slate-100 p-4 shadow-inner group">
                             <pre id="text-halo" data-template="Halo {{CUSTOMER_NAME}} 👋
 
 Terima kasih sudah menghubungi Kirimkirim Florist 😊
@@ -332,12 +332,12 @@ Agar kami bisa merekomendasikan desain yang sesuai, boleh dibantu informasinya:
 
 1. Acara apa?
 2. Lokasi pengiriman?
-3. Kapan dikirim?" class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-base sm:text-lg"></pre>
+3. Kapan dikirim?" class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-xs sm:text-sm"></pre>
                             
                             <!-- Floating Copy Button -->
-                            <div class="absolute top-4 right-4 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                <button onclick="copyToClipboard('text-halo', this)" class="px-4 py-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-2xl text-sm font-extrabold flex items-center gap-2 transition-all shadow-md">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                            <div class="absolute top-3 right-3 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                <button onclick="copyToClipboard('text-halo', this)" class="px-3 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-xl text-xs font-extrabold flex items-center gap-1.5 transition-all shadow-md">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
                                     Salin Template
                                 </button>
                             </div>
@@ -345,26 +345,26 @@ Agar kami bisa merekomendasikan desain yang sesuai, boleh dibantu informasinya:
                     </section>
 
                     <!-- TEMPLATE 2 — JIKA CUSTOMER LANGSUNG TANYA HARGA -->
-                    <section id="sec-harga" data-category="rekomendasi" class="bg-white rounded-3xl p-6 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
-                        <div class="flex flex-wrap items-center justify-between gap-4 mb-4 pb-4 border-b border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <span class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-base">2</span>
+                    <section id="sec-harga" data-category="rekomendasi" class="bg-white rounded-2xl p-5 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-3 mb-3 pb-3 border-b border-slate-100">
+                            <div class="flex items-center gap-2.5">
+                                <span class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-sm">2</span>
                                 <div>
-                                    <h3 class="font-extrabold text-slate-900 text-lg">Jika Customer Langsung Tanya Harga</h3>
-                                    <p class="text-xs text-slate-500">Tahan harga sejenak untuk menghindari status 'pembanding harga'</p>
+                                    <h3 class="font-extrabold text-slate-900 text-sm sm:text-base">Jika Customer Langsung Tanya Harga</h3>
+                                    <p class="text-[11px] text-slate-500">Tahan harga sejenak untuk menghindari status 'pembanding harga'</p>
                                 </div>
                             </div>
-                            <span class="px-3 py-1 bg-yellow-50 text-yellow-700 text-xs font-extrabold rounded-full uppercase tracking-wider">Kategori: Gali Kebutuhan</span>
+                            <span class="px-2.5 py-0.5 bg-yellow-50 text-yellow-700 text-[10px] font-extrabold rounded-full uppercase tracking-wider">Kategori: Gali Kebutuhan</span>
                         </div>
 
                         <!-- Trigger Box -->
-                        <div class="mb-4 bg-amber-50 border border-amber-100 rounded-2xl p-4 flex items-center justify-between text-sm">
+                        <div class="mb-3 bg-amber-50 border border-amber-100 rounded-xl p-3 flex items-center justify-between text-xs">
                             <span class="text-slate-600 font-medium">Gunakan Quick Reply WA:</span>
-                            <code class="bg-amber-100 text-amber-800 px-3 py-1.5 rounded-xl font-bold font-mono">/harga</code>
+                            <code class="bg-amber-100 text-amber-800 px-2 py-1 rounded-lg font-bold font-mono">/harga</code>
                         </div>
 
                         <!-- Template Box -->
-                        <div class="relative bg-slate-50 rounded-2xl border border-slate-100 p-6 shadow-inner group">
+                        <div class="relative bg-slate-50 rounded-xl border border-slate-100 p-4 shadow-inner group">
                             <pre id="text-harga" data-template="Siap {{CUSTOMER_NAME}} 😊
 
 Kami memiliki beberapa ukuran bunga papan dengan harga yang berbeda.
@@ -375,89 +375,89 @@ Agar saya bisa memberikan rekomendasi yang sesuai, boleh diinformasikan:
 🎉 Acara apa
 📅 Kapan dikirim
 
-Nanti saya kirimkan pilihan ukuran beserta contoh desain dan harganya ya {{CUSTOMER_NAME}}." class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-base sm:text-lg"></pre>
+Nanti saya kirimkan pilihan ukuran beserta contoh desain dan harganya ya {{CUSTOMER_NAME}}." class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-xs sm:text-sm"></pre>
                             
                             <!-- Floating Copy Button -->
-                            <div class="absolute top-4 right-4 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                <button onclick="copyToClipboard('text-harga', this)" class="px-4 py-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-2xl text-sm font-extrabold flex items-center gap-2 transition-all shadow-md">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                            <div class="absolute top-3 right-3 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                <button onclick="copyToClipboard('text-harga', this)" class="px-3 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-xl text-xs font-extrabold flex items-center gap-1.5 transition-all shadow-md">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
                                     Salin Template
                                 </button>
                             </div>
                         </div>
                     </section>
 
-                    <!-- TEMPLATE 3 (NEW) — TAHAP 1 HYBRID: KIRIM KATALOG -->
-                    <section id="sec-katalog" data-category="rekomendasi" class="bg-white rounded-3xl p-6 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
-                        <div class="flex flex-wrap items-center justify-between gap-4 mb-4 pb-4 border-b border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <span class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-base">3</span>
+                    <!-- TEMPLATE 3 — TAHAP 1 HYBRID: KIRIM KATALOG -->
+                    <section id="sec-katalog" data-category="rekomendasi" class="bg-white rounded-2xl p-5 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-3 mb-3 pb-3 border-b border-slate-100">
+                            <div class="flex items-center gap-2.5">
+                                <span class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-sm">3</span>
                                 <div>
-                                    <h3 class="font-extrabold text-slate-900 text-lg">Hybrid Tahap 1: Kirim Katalog</h3>
-                                    <p class="text-xs text-slate-500">Kirim link katalog untuk memberikan gambaran model secara mandiri di awal</p>
+                                    <h3 class="font-extrabold text-slate-900 text-sm sm:text-base">Hybrid Tahap 1: Kirim Katalog</h3>
+                                    <p class="text-[11px] text-slate-500">Kirim link katalog untuk memberikan gambaran model secara mandiri di awal</p>
                                 </div>
                             </div>
-                            <span class="px-3 py-1 bg-teal-50 text-teal-700 text-xs font-extrabold rounded-full uppercase tracking-wider">Kategori: Gali Kebutuhan</span>
+                            <span class="px-2.5 py-0.5 bg-teal-50 text-teal-700 text-[10px] font-extrabold rounded-full uppercase tracking-wider">Kategori: Gali Kebutuhan</span>
                         </div>
 
                         <!-- Trigger Box -->
-                        <div class="mb-4 bg-amber-50 border border-amber-100 rounded-2xl p-4 flex items-center justify-between text-sm">
+                        <div class="mb-3 bg-amber-50 border border-amber-100 rounded-xl p-3 flex items-center justify-between text-xs">
                             <span class="text-slate-600 font-medium">Gunakan Quick Reply WA:</span>
-                            <code class="bg-amber-100 text-amber-800 px-3 py-1.5 rounded-xl font-bold font-mono">/katalog</code>
+                            <code class="bg-amber-100 text-amber-800 px-2 py-1 rounded-lg font-bold font-mono">/katalog</code>
                         </div>
 
                         <!-- Template Box -->
-                        <div class="relative bg-slate-50 rounded-2xl border border-slate-100 p-6 shadow-inner group">
+                        <div class="relative bg-slate-50 rounded-xl border border-slate-100 p-4 shadow-inner group">
                             <pre id="text-katalog" data-template="Saya kirim katalog terlebih dahulu ya {{CUSTOMER_NAME}} 😊
 
 Boleh diklik link berikut untuk melihat koleksi desain terbaru kami:
 👉 https://kirimkirimflorist.com/katalog
 
-Nanti kalau sudah ada model yang {{CUSTOMER_NAME}} sukai, atau misal masih bingung memilih, kabari saya ya. Biar langsung saya bantu pilihkan yang terbaik!" class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-base sm:text-lg"></pre>
+Nanti kalau sudah ada model yang {{CUSTOMER_NAME}} sukai, atau misal masih bingung memilih, kabari saya ya. Biar langsung saya bantu pilihkan yang terbaik!" class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-xs sm:text-sm"></pre>
                             
                             <!-- Floating Copy Button -->
-                            <div class="absolute top-4 right-4 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                <button onclick="copyToClipboard('text-katalog', this)" class="px-4 py-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-2xl text-sm font-extrabold flex items-center gap-2 transition-all shadow-md">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                            <div class="absolute top-3 right-3 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                <button onclick="copyToClipboard('text-katalog', this)" class="px-3 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-xl text-xs font-extrabold flex items-center gap-1.5 transition-all shadow-md">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
                                     Salin Template
                                 </button>
                             </div>
                         </div>
                     </section>
 
-                    <!-- TEMPLATE 4 (NEW) — TAHAP 2 HYBRID: KURASI 3 DESAIN TERBAIK -->
-                    <section id="sec-kurasi" data-category="rekomendasi" class="bg-white rounded-3xl p-6 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
-                        <div class="flex flex-wrap items-center justify-between gap-4 mb-4 pb-4 border-b border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <span class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-base">4</span>
+                    <!-- TEMPLATE 4 — TAHAP 2 HYBRID: KURASI 3 DESAIN TERBAIK -->
+                    <section id="sec-kurasi" data-category="rekomendasi" class="bg-white rounded-2xl p-5 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-3 mb-3 pb-3 border-b border-slate-100">
+                            <div class="flex items-center gap-2.5">
+                                <span class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-sm">4</span>
                                 <div>
-                                    <h3 class="font-extrabold text-slate-900 text-lg">Hybrid Tahap 2: Kurasi 3 Desain</h3>
-                                    <p class="text-xs text-slate-500">Membantu customer memilih dengan membatasi pilihan (Cegah Choice Overload)</p>
+                                    <h3 class="font-extrabold text-slate-900 text-sm sm:text-base">Hybrid Tahap 2: Kurasi 3 Desain</h3>
+                                    <p class="text-[11px] text-slate-500">Membantu customer memilih dengan membatasi pilihan (Cegah Choice Overload)</p>
                                 </div>
                             </div>
-                            <span class="px-3 py-1 bg-yellow-50 text-yellow-700 text-xs font-extrabold rounded-full uppercase tracking-wider">Kategori: Rekomendasi</span>
+                            <span class="px-2.5 py-0.5 bg-yellow-50 text-yellow-700 text-[10px] font-extrabold rounded-full uppercase tracking-wider">Kategori: Rekomendasi</span>
                         </div>
 
                         <!-- Trigger Box -->
-                        <div class="mb-4 bg-amber-50 border border-amber-100 rounded-2xl p-4 flex items-center justify-between text-sm">
+                        <div class="mb-3 bg-amber-50 border border-amber-100 rounded-xl p-3 flex items-center justify-between text-xs">
                             <span class="text-slate-600 font-medium">Gunakan Quick Reply WA:</span>
-                            <code class="bg-amber-100 text-amber-800 px-3 py-1.5 rounded-xl font-bold font-mono">/kurasi</code>
+                            <code class="bg-amber-100 text-amber-800 px-2 py-1 rounded-lg font-bold font-mono">/kurasi</code>
                         </div>
 
                         <!-- Template Box -->
-                        <div class="relative bg-slate-50 rounded-2xl border border-slate-100 p-6 shadow-inner group">
+                        <div class="relative bg-slate-50 rounded-xl border border-slate-100 p-4 shadow-inner group">
                             <pre id="text-kurasi" data-template="Untuk kebutuhan acara {{CUSTOMER_NAME}}, saya sangat merekomendasikan 3 model desain yang paling banyak dipilih dan dinilai paling representatif ini:
 
 1️⃣ Desain Corporate Modern (Tipe Elegant)
 2️⃣ Desain Papan Kayu Rustik (Tipe Premium)
 3️⃣ Desain Warna Cerah Meriah (Tipe Classic)
 
-Saya kirimkan 3 foto contoh aslinya ya {{CUSTOMER_NAME}}. Kira-kira dari ketiga model kurasi terbaik ini, {{CUSTOMER_NAME}} lebih sreg dengan desain nomor berapa? 😊" class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-base sm:text-lg"></pre>
+Saya kirimkan 3 foto contoh aslinya ya {{CUSTOMER_NAME}}. Kira-kira dari ketiga model kurasi terbaik ini, {{CUSTOMER_NAME}} lebih sreg dengan desain nomor berapa? 😊" class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-xs sm:text-sm"></pre>
                             
                             <!-- Floating Copy Button -->
-                            <div class="absolute top-4 right-4 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                <button onclick="copyToClipboard('text-kurasi', this)" class="px-4 py-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-2xl text-sm font-extrabold flex items-center gap-2 transition-all shadow-md">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                            <div class="absolute top-3 right-3 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                <button onclick="copyToClipboard('text-kurasi', this)" class="px-3 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-xl text-xs font-extrabold flex items-center gap-1.5 transition-all shadow-md">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
                                     Salin Template
                                 </button>
                             </div>
@@ -465,26 +465,26 @@ Saya kirimkan 3 foto contoh aslinya ya {{CUSTOMER_NAME}}. Kira-kira dari ketiga 
                     </section>
 
                     <!-- TEMPLATE 5 — REKOMENDASI PRODUK -->
-                    <section id="sec-rekomendasi" data-category="rekomendasi" class="bg-white rounded-3xl p-6 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
-                        <div class="flex flex-wrap items-center justify-between gap-4 mb-4 pb-4 border-b border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <span class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-base">5</span>
+                    <section id="sec-rekomendasi" data-category="rekomendasi" class="bg-white rounded-2xl p-5 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-3 mb-3 pb-3 border-b border-slate-100">
+                            <div class="flex items-center gap-2.5">
+                                <span class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-sm">5</span>
                                 <div>
-                                    <h3 class="font-extrabold text-slate-900 text-lg">Rekomendasi Ukuran Produk</h3>
-                                    <p class="text-xs text-slate-500">Mengarahkan ke satu ukuran relevan dengan positioning benefit kelas premium</p>
+                                    <h3 class="font-extrabold text-slate-900 text-sm sm:text-base">Rekomendasi Ukuran Produk</h3>
+                                    <p class="text-[11px] text-slate-500">Mengarahkan ke satu ukuran relevan dengan positioning benefit kelas premium</p>
                                 </div>
                             </div>
-                            <span class="px-3 py-1 bg-rose-50 text-rose-700 text-xs font-extrabold rounded-full uppercase tracking-wider">Kategori: Rekomendasi</span>
+                            <span class="px-2.5 py-0.5 bg-rose-50 text-rose-700 text-[10px] font-extrabold rounded-full uppercase tracking-wider">Kategori: Rekomendasi</span>
                         </div>
 
-                        <div class="space-y-6">
+                        <div class="space-y-4">
                             <!-- Sub-Option A: Budget Ekonomis -->
-                            <div class="bg-slate-50/50 rounded-2xl p-5 border border-slate-150">
-                                <div class="flex justify-between items-center mb-3">
-                                    <span class="text-xs font-extrabold bg-slate-200 text-slate-700 px-3 py-1 rounded-full uppercase tracking-wider">A. Pilihan Hemat (120 cm)</span>
-                                    <code class="bg-amber-100 text-amber-800 px-3 py-0.5 rounded-xl text-xs font-bold font-mono">/120</code>
+                            <div class="bg-slate-50/50 rounded-xl p-4 border border-slate-150">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-[10px] font-extrabold bg-slate-200 text-slate-700 px-2 py-0.5 rounded-full uppercase tracking-wider">A. Pilihan Hemat (120 cm)</span>
+                                    <code class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded-lg text-[10px] font-bold font-mono">/120</code>
                                </div>
-                                <div class="relative bg-slate-50 rounded-2xl border border-slate-100 p-5 group">
+                                <div class="relative bg-slate-50 rounded-xl border border-slate-100 p-4 group">
                                     <pre id="text-ekonomis" data-template="Untuk kebutuhan tersebut kami rekomendasikan ukuran 120 cm {{CUSTOMER_NAME}} 😊
 
 Pilihan paling sesuai kebutuhan hemat:
@@ -492,10 +492,10 @@ Pilihan paling sesuai kebutuhan hemat:
 ✅ Grand Opening skala kecil
 ✅ Value terbaik & pengerjaan cepat
 
-Saya kirim contoh desainnya ya {{CUSTOMER_NAME}}." class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-base sm:text-lg"></pre>
-                                    <div class="absolute top-4 right-4 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                        <button onclick="copyToClipboard('text-ekonomis', this)" class="px-4 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-2xl text-xs font-extrabold flex items-center gap-1.5 transition-all shadow-md">
-                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+Saya kirim contoh desainnya ya {{CUSTOMER_NAME}}." class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-xs sm:text-sm"></pre>
+                                    <div class="absolute top-3 right-3 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                        <button onclick="copyToClipboard('text-ekonomis', this)" class="px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-xl text-xs font-extrabold flex items-center gap-1 transition-all shadow-md">
+                                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
                                             Salin
                                         </button>
                                     </div>
@@ -503,12 +503,12 @@ Saya kirim contoh desainnya ya {{CUSTOMER_NAME}}." class="whitespace-pre-wrap fo
                             </div>
 
                             <!-- Sub-Option B: Budget Menengah -->
-                            <div class="bg-brand-50/50 rounded-2xl p-5 border border-brand-100">
-                                <div class="flex justify-between items-center mb-3">
-                                    <span class="text-xs font-extrabold bg-brand-100 text-brand-800 px-3 py-1 rounded-full uppercase tracking-wider">B. Pilihan Paling Banyak Dipilih (150 cm) - REKOMENDASI</span>
-                                    <code class="bg-amber-100 text-amber-800 px-3 py-0.5 rounded-xl text-xs font-bold font-mono">/150</code>
+                            <div class="bg-brand-50/50 rounded-xl p-4 border border-brand-100">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-[10px] font-extrabold bg-brand-100 text-brand-800 px-2 py-0.5 rounded-full uppercase tracking-wider">B. Pilihan Paling Banyak Dipilih (150 cm) - REKOMENDASI</span>
+                                    <code class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded-lg text-[10px] font-bold font-mono">/150</code>
                                 </div>
-                                <div class="relative bg-slate-50 rounded-2xl border border-slate-100 p-5 group">
+                                <div class="relative bg-slate-50 rounded-xl border border-slate-100 p-4 group">
                                     <pre id="text-menengah" data-template="Untuk kebutuhan tersebut kami rekomendasikan ukuran 150 cm {{CUSTOMER_NAME}} 😊
 
 Ini adalah pilihan paling banyak dipilih karena tampil besar, terlihat megah, dan sangat proporsional di lokasi acara.
@@ -517,10 +517,10 @@ Ini adalah pilihan paling banyak dipilih karena tampil besar, terlihat megah, da
 ✅ Ukuran representatif dan profesional
 ✅ Desain bisa dicustom & ditambah logo perusahaan Anda
 
-Saya kirim beberapa contoh desain aslinya ya {{CUSTOMER_NAME}}." class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-base sm:text-lg"></pre>
-                                    <div class="absolute top-4 right-4 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                        <button onclick="copyToClipboard('text-menengah', this)" class="px-4 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-2xl text-xs font-extrabold flex items-center gap-1.5 transition-all shadow-md">
-                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+Saya kirim beberapa contoh desain aslinya ya {{CUSTOMER_NAME}}." class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-xs sm:text-sm"></pre>
+                                    <div class="absolute top-3 right-3 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                        <button onclick="copyToClipboard('text-menengah', this)" class="px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-xl text-xs font-extrabold flex items-center gap-1 transition-all shadow-md">
+                                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
                                             Salin
                                         </button>
                                     </div>
@@ -528,22 +528,22 @@ Saya kirim beberapa contoh desain aslinya ya {{CUSTOMER_NAME}}." class="whitespa
                             </div>
 
                             <!-- Sub-Option C: Premium -->
-                            <div class="bg-yellow-50/30 rounded-2xl p-5 border border-yellow-100">
-                                <div class="flex justify-between items-center mb-3">
-                                    <span class="text-xs font-extrabold bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full uppercase tracking-wider">C. Pilihan Premium / Eksklusif (180 cm)</span>
-                                    <code class="bg-amber-100 text-amber-800 px-3 py-0.5 rounded-xl text-xs font-bold font-mono">/180</code>
+                            <div class="bg-yellow-50/30 rounded-xl p-4 border border-yellow-100">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-[10px] font-extrabold bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded-full uppercase tracking-wider">C. Pilihan Premium / Eksklusif (180 cm)</span>
+                                    <code class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded-lg text-[10px] font-bold font-mono">/180</code>
                                 </div>
-                                <div class="relative bg-slate-50 rounded-2xl border border-slate-100 p-5 group">
+                                <div class="relative bg-slate-50 rounded-xl border border-slate-100 p-4 group">
                                     <pre id="text-premium" data-template="Untuk acara perusahaan atau Grand Opening yang lebih berkesan serta memberikan prestise tersendiri, kami rekomendasikan ukuran 180 cm ya {{CUSTOMER_NAME}} 😊
 
 ✅ Tampilan super premium & mewah
 ✅ Kepadatan bunga lebih tebal dan melimpah
 ✅ Paling menonjol & terlihat jelas di lokasi acara
 
-Saya kirim contoh desainnya ya {{CUSTOMER_NAME}}." class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-base sm:text-lg"></pre>
-                                    <div class="absolute top-4 right-4 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                        <button onclick="copyToClipboard('text-premium', this)" class="px-4 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-2xl text-xs font-extrabold flex items-center gap-1.5 transition-all shadow-md">
-                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+Saya kirim contoh desainnya ya {{CUSTOMER_NAME}}." class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-xs sm:text-sm"></pre>
+                                    <div class="absolute top-3 right-3 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                        <button onclick="copyToClipboard('text-premium', this)" class="px-3 py-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-xl text-xs font-extrabold flex items-center gap-1 transition-all shadow-md">
+                                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
                                             Salin
                                         </button>
                                     </div>
@@ -553,26 +553,26 @@ Saya kirim contoh desainnya ya {{CUSTOMER_NAME}}." class="whitespace-pre-wrap fo
                     </section>
 
                     <!-- TEMPLATE 6 — TRUST BUILDER -->
-                    <section id="sec-trust" data-category="rekomendasi" class="bg-white rounded-3xl p-6 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
-                        <div class="flex flex-wrap items-center justify-between gap-4 mb-4 pb-4 border-b border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <span class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-base">6</span>
+                    <section id="sec-trust" data-category="rekomendasi" class="bg-white rounded-2xl p-5 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-3 mb-3 pb-3 border-b border-slate-100">
+                            <div class="flex items-center gap-2.5">
+                                <span class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-sm">6</span>
                                 <div>
-                                    <h3 class="font-extrabold text-slate-900 text-lg">Trust Builder (Proaktif)</h3>
-                                    <p class="text-xs text-slate-500">Kirim sebelum customer ragu, highlight jaminan foto hasil jadi sebelum kirim</p>
+                                    <h3 class="font-extrabold text-slate-900 text-sm sm:text-base">Trust Builder (Proaktif)</h3>
+                                    <p class="text-[11px] text-slate-500">Kirim sebelum customer ragu, highlight jaminan foto hasil jadi sebelum kirim</p>
                                 </div>
                             </div>
-                            <span class="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-extrabold rounded-full uppercase tracking-wider">Kategori: Membangun Kepercayaan</span>
+                            <span class="px-2.5 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-extrabold rounded-full uppercase tracking-wider">Kategori: Membangun Kepercayaan</span>
                         </div>
 
                         <!-- Trigger Box -->
-                        <div class="mb-4 bg-amber-50 border border-amber-100 rounded-2xl p-4 flex items-center justify-between text-sm">
+                        <div class="mb-3 bg-amber-50 border border-amber-100 rounded-xl p-3 flex items-center justify-between text-xs">
                             <span class="text-slate-600 font-medium">Gunakan Quick Reply WA:</span>
-                            <code class="bg-amber-100 text-amber-800 px-3 py-1.5 rounded-xl font-bold font-mono">/trust</code>
+                            <code class="bg-amber-100 text-amber-800 px-2 py-1 rounded-lg font-bold font-mono">/trust</code>
                         </div>
 
                         <!-- Template Box -->
-                        <div class="relative bg-slate-50 rounded-2xl border border-slate-100 p-6 shadow-inner group">
+                        <div class="relative bg-slate-50 rounded-xl border border-slate-100 p-4 shadow-inner group">
                             <pre id="text-trust" data-template="Sebagai informasi tambahan ya {{CUSTOMER_NAME}} 😊
 
 Semua bunga papan di Kirimkirim Florist:
@@ -582,12 +582,12 @@ Semua bunga papan di Kirimkirim Florist:
 ✅ Jaminan kontrol kualitas: Sebelum dikirim, kami kirimkan FOTO HASIL JADI-nya terlebih dahulu, sehingga {{CUSTOMER_NAME}} bisa mengecek tulisan, nama, dan kerapihan desainnya.
 ✅ Layanan profesional & pengiriman aman di area Jakarta, Tangerang, Depok & Bekasi
 
-Kami pastikan hasil yang diterima sesuai dengan pesanan yang disepakati." class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-base sm:text-lg"></pre>
+Kami pastikan hasil yang diterima sesuai dengan pesanan yang disepakati." class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-xs sm:text-sm"></pre>
                             
                             <!-- Floating Copy Button -->
-                            <div class="absolute top-4 right-4 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                <button onclick="copyToClipboard('text-trust', this)" class="px-4 py-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-2xl text-sm font-extrabold flex items-center gap-2 transition-all shadow-md">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                            <div class="absolute top-3 right-3 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                <button onclick="copyToClipboard('text-trust', this)" class="px-3 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-xl text-xs font-extrabold flex items-center gap-1.5 transition-all shadow-md">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
                                     Salin Template
                                 </button>
                             </div>
@@ -595,26 +595,26 @@ Kami pastikan hasil yang diterima sesuai dengan pesanan yang disepakati." class=
                     </section>
 
                     <!-- TEMPLATE 7 — MENGARAHKAN CUSTOMER MEMILIH -->
-                    <section id="sec-pilih" data-category="rekomendasi" class="bg-white rounded-3xl p-6 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
-                        <div class="flex flex-wrap items-center justify-between gap-4 mb-4 pb-4 border-b border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <span class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-base">7</span>
+                    <section id="sec-pilih" data-category="rekomendasi" class="bg-white rounded-2xl p-5 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-3 mb-3 pb-3 border-b border-slate-100">
+                            <div class="flex items-center gap-2.5">
+                                <span class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-sm">7</span>
                                 <div>
-                                    <h3 class="font-extrabold text-slate-900 text-lg">Mengarahkan Pilihan (Double Bind)</h3>
-                                    <p class="text-xs text-slate-500">Membatasi pilihan model menjadi dua agar cepat diputuskan</p>
+                                    <h3 class="font-extrabold text-slate-900 text-sm sm:text-base">Mengarahkan Pilihan (Double Bind)</h3>
+                                    <p class="text-[11px] text-slate-500">Membatasi pilihan model menjadi dua agar cepat diputuskan</p>
                                 </div>
                             </div>
-                            <span class="px-3 py-1 bg-rose-50 text-rose-700 text-xs font-extrabold rounded-full uppercase tracking-wider">Kategori: Persuasi</span>
+                            <span class="px-2.5 py-0.5 bg-rose-50 text-rose-700 text-[10px] font-extrabold rounded-full uppercase tracking-wider">Kategori: Persuasi</span>
                         </div>
 
                         <!-- Trigger Box -->
-                        <div class="mb-4 bg-amber-50 border border-amber-100 rounded-2xl p-4 flex items-center justify-between text-sm">
+                        <div class="mb-3 bg-amber-50 border border-amber-100 rounded-xl p-3 flex items-center justify-between text-xs">
                             <span class="text-slate-600 font-medium">Gunakan Quick Reply WA:</span>
-                            <code class="bg-amber-100 text-amber-800 px-3 py-1.5 rounded-xl font-bold font-mono">/pilih</code>
+                            <code class="bg-amber-100 text-amber-800 px-2 py-1 rounded-lg font-bold font-mono">/pilih</code>
                         </div>
 
                         <!-- Template Box -->
-                        <div class="relative bg-slate-50 rounded-2xl border border-slate-100 p-6 shadow-inner group">
+                        <div class="relative bg-slate-50 rounded-xl border border-slate-100 p-4 shadow-inner group">
                             <pre id="text-pilih" data-template="Dari beberapa desain yang saya kirim ini, {{CUSTOMER_NAME}} lebih cocok dengan tipe yang mana?
 
 Untuk acara seperti ini biasanya customer kami memilih salah satu dari dua model terbaik berikut:
@@ -622,12 +622,12 @@ Untuk acara seperti ini biasanya customer kami memilih salah satu dari dua model
 1️⃣ Model Elegan
 2️⃣ Model Premium
 
-Kira-kira {{CUSTOMER_NAME}} lebih cocok dengan model yang mana? Nanti saya bantu sesuaikan dengan kebutuhan acaranya 😊" class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-base sm:text-lg"></pre>
+Kira-kira {{CUSTOMER_NAME}} lebih cocok dengan model yang mana? Nanti saya bantu sesuaikan dengan kebutuhan acaranya 😊" class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-xs sm:text-sm"></pre>
                             
                             <!-- Floating Copy Button -->
-                            <div class="absolute top-4 right-4 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                <button onclick="copyToClipboard('text-pilih', this)" class="px-4 py-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-2xl text-sm font-extrabold flex items-center gap-2 transition-all shadow-md">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                            <div class="absolute top-3 right-3 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                <button onclick="copyToClipboard('text-pilih', this)" class="px-3 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-xl text-xs font-extrabold flex items-center gap-1.5 transition-all shadow-md">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
                                     Salin Template
                                 </button>
                             </div>
@@ -635,26 +635,26 @@ Kira-kira {{CUSTOMER_NAME}} lebih cocok dengan model yang mana? Nanti saya bantu
                     </section>
 
                     <!-- TEMPLATE 8 — CLOSING (FORM ORDER) -->
-                    <section id="sec-closing" data-category="transaksi" class="bg-white rounded-3xl p-6 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
-                        <div class="flex flex-wrap items-center justify-between gap-4 mb-4 pb-4 border-b border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <span class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-base">8</span>
+                    <section id="sec-closing" data-category="transaksi" class="bg-white rounded-2xl p-5 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-3 mb-3 pb-3 border-b border-slate-100">
+                            <div class="flex items-center gap-2.5">
+                                <span class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-sm">8</span>
                                 <div>
-                                    <h3 class="font-extrabold text-slate-900 text-lg">Closing (Form Order)</h3>
-                                    <p class="text-xs text-slate-500">Kumpulkan data pesanan lengkap setelah desain disepakati</p>
+                                    <h3 class="font-extrabold text-slate-900 text-sm sm:text-base">Closing (Form Order)</h3>
+                                    <p class="text-[11px] text-slate-500">Kumpulkan data pesanan lengkap setelah desain disepakati</p>
                                 </div>
                             </div>
-                            <span class="px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-extrabold rounded-full uppercase tracking-wider">Kategori: Transaksi</span>
+                            <span class="px-2.5 py-0.5 bg-emerald-50 text-emerald-700 text-[10px] font-extrabold rounded-full uppercase tracking-wider">Kategori: Transaksi</span>
                         </div>
 
                         <!-- Trigger Box -->
-                        <div class="mb-4 bg-amber-50 border border-amber-100 rounded-2xl p-4 flex items-center justify-between text-sm">
+                        <div class="mb-3 bg-amber-50 border border-amber-100 rounded-xl p-3 flex items-center justify-between text-xs">
                             <span class="text-slate-600 font-medium">Gunakan Quick Reply WA:</span>
-                            <code class="bg-amber-100 text-amber-800 px-3 py-1.5 rounded-xl font-bold font-mono">/order</code>
+                            <code class="bg-amber-100 text-amber-800 px-2 py-1 rounded-lg font-bold font-mono">/order</code>
                         </div>
 
                         <!-- Template Box -->
-                        <div class="relative bg-slate-50 rounded-2xl border border-slate-100 p-6 shadow-inner group">
+                        <div class="relative bg-slate-50 rounded-xl border border-slate-100 p-4 shadow-inner group">
                             <pre id="text-order" data-template="Baik {{CUSTOMER_NAME}} 😊
 
 Kalau desain ini sudah sesuai, saya bantu proses pesanannya sekarang ya.
@@ -665,12 +665,12 @@ Mohon bantu kirimkan data lengkap berikut:
 📌 Nama Penerima:
 📌 Ucapan yang ingin ditulis:
 📌 Alamat lengkap lokasi acara:
-📌 Tanggal pengiriman:" class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-base sm:text-lg"></pre>
+📌 Tanggal pengiriman:" class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-xs sm:text-sm"></pre>
                             
                             <!-- Floating Copy Button -->
-                            <div class="absolute top-4 right-4 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                <button onclick="copyToClipboard('text-order', this)" class="px-4 py-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-2xl text-sm font-extrabold flex items-center gap-2 transition-all shadow-md">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                            <div class="absolute top-3 right-3 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                <button onclick="copyToClipboard('text-order', this)" class="px-3 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-xl text-xs font-extrabold flex items-center gap-1.5 transition-all shadow-md">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
                                     Salin Template
                                 </button>
                             </div>
@@ -678,26 +678,26 @@ Mohon bantu kirimkan data lengkap berikut:
                     </section>
 
                     <!-- TEMPLATE 9 — TOTAL PEMBAYARAN -->
-                    <section id="sec-invoice" data-category="transaksi" class="bg-white rounded-3xl p-6 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
-                        <div class="flex flex-wrap items-center justify-between gap-4 mb-4 pb-4 border-b border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <span class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-base">9</span>
+                    <section id="sec-invoice" data-category="transaksi" class="bg-white rounded-2xl p-5 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-3 mb-3 pb-3 border-b border-slate-100">
+                            <div class="flex items-center gap-2.5">
+                                <span class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-sm">9</span>
                                 <div>
-                                    <h3 class="font-extrabold text-slate-900 text-lg">Total Pembayaran (Invoice)</h3>
-                                    <p class="text-xs text-slate-500">Rincian invoice resmi (Ongkir aman dihitung berdasarkan jarak di akhir)</p>
+                                    <h3 class="font-extrabold text-slate-900 text-sm sm:text-base">Total Pembayaran (Invoice)</h3>
+                                    <p class="text-[11px] text-slate-500">Rincian invoice resmi (Ongkir aman dihitung berdasarkan jarak di akhir)</p>
                                 </div>
                             </div>
-                            <span class="px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-extrabold rounded-full uppercase tracking-wider">Kategori: Transaksi</span>
+                            <span class="px-2.5 py-0.5 bg-emerald-50 text-emerald-700 text-[10px] font-extrabold rounded-full uppercase tracking-wider">Kategori: Transaksi</span>
                         </div>
 
                         <!-- Trigger Box -->
-                        <div class="mb-4 bg-amber-50 border border-amber-100 rounded-2xl p-4 flex items-center justify-between text-sm">
+                        <div class="mb-3 bg-amber-50 border border-amber-100 rounded-xl p-3 flex items-center justify-between text-xs">
                             <span class="text-slate-600 font-medium">Gunakan Quick Reply WA:</span>
-                            <code class="bg-amber-100 text-amber-800 px-3 py-1.5 rounded-xl font-bold font-mono">/invoice</code>
+                            <code class="bg-amber-100 text-amber-800 px-2 py-1 rounded-lg font-bold font-mono">/invoice</code>
                         </div>
 
                         <!-- Template Box -->
-                        <div class="relative bg-slate-50 rounded-2xl border border-slate-100 p-6 shadow-inner group">
+                        <div class="relative bg-slate-50 rounded-xl border border-slate-100 p-4 shadow-inner group">
                             <pre id="text-invoice" data-template="Berikut rincian pesanannya ya {{CUSTOMER_NAME}}:
 
 🪧 Produk :
@@ -710,12 +710,12 @@ Apabila rincian di atas sudah sesuai, pesanan dapat kami jadwalkan untuk diprodu
 Silakan melakukan pembayaran aman melalui transfer ke rekening resmi kami berikut:
 {{REKENING}}
 
-Jika sudah melakukan transfer, mohon kirimkan bukti pembayarannya di sini ya {{CUSTOMER_NAME}} 😊" class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-base sm:text-lg"></pre>
+Jika sudah melakukan transfer, mohon kirimkan bukti pembayarannya di sini ya {{CUSTOMER_NAME}} 😊" class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-xs sm:text-sm"></pre>
                             
                             <!-- Floating Copy Button -->
-                            <div class="absolute top-4 right-4 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                <button onclick="copyToClipboard('text-invoice', this)" class="px-4 py-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-2xl text-sm font-extrabold flex items-center gap-2 transition-all shadow-md">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                            <div class="absolute top-3 right-3 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                <button onclick="copyToClipboard('text-invoice', this)" class="px-3 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-xl text-xs font-extrabold flex items-center gap-1.5 transition-all shadow-md">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
                                     Salin Template
                                 </button>
                             </div>
@@ -723,36 +723,36 @@ Jika sudah melakukan transfer, mohon kirimkan bukti pembayarannya di sini ya {{C
                     </section>
 
                     <!-- TEMPLATE 10 — KONFIRMASI PEMBAYARAN -->
-                    <section id="sec-lunas" data-category="transaksi" class="bg-white rounded-3xl p-6 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
-                        <div class="flex flex-wrap items-center justify-between gap-4 mb-4 pb-4 border-b border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <span class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-base">10</span>
+                    <section id="sec-lunas" data-category="transaksi" class="bg-white rounded-2xl p-5 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-3 mb-3 pb-3 border-b border-slate-100">
+                            <div class="flex items-center gap-2.5">
+                                <span class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-sm">10</span>
                                 <div>
-                                    <h3 class="font-extrabold text-slate-900 text-lg">Konfirmasi Pembayaran</h3>
-                                    <p class="text-xs text-slate-500">Amankan komitmen antrean produksi dengan jaminan kirim foto sebelum kirim</p>
+                                    <h3 class="font-extrabold text-slate-900 text-sm sm:text-base">Konfirmasi Pembayaran</h3>
+                                    <p class="text-[11px] text-slate-500">Amankan komitmen antrean produksi dengan jaminan kirim foto sebelum kirim</p>
                                 </div>
                             </div>
-                            <span class="px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-extrabold rounded-full uppercase tracking-wider">Kategori: Transaksi</span>
+                            <span class="px-2.5 py-0.5 bg-emerald-50 text-emerald-700 text-[10px] font-extrabold rounded-full uppercase tracking-wider">Kategori: Transaksi</span>
                         </div>
 
                         <!-- Trigger Box -->
-                        <div class="mb-4 bg-amber-50 border border-amber-100 rounded-2xl p-4 flex items-center justify-between text-sm">
+                        <div class="mb-3 bg-amber-50 border border-amber-100 rounded-xl p-3 flex items-center justify-between text-xs">
                             <span class="text-slate-600 font-medium">Gunakan Quick Reply WA:</span>
-                            <code class="bg-amber-100 text-amber-800 px-3 py-1.5 rounded-xl font-bold font-mono">/lunas</code>
+                            <code class="bg-amber-100 text-amber-800 px-2 py-1 rounded-lg font-bold font-mono">/lunas</code>
                         </div>
 
                         <!-- Template Box -->
-                        <div class="relative bg-slate-50 rounded-2xl border border-slate-100 p-6 shadow-inner group">
+                        <div class="relative bg-slate-50 rounded-xl border border-slate-100 p-4 shadow-inner group">
                             <pre id="text-lunas" data-template="Pembayaran sudah kami terima dengan baik, {{CUSTOMER_NAME}} ✅
 
 Pesanan Anda telah resmi dijadwalkan dan langsung diproses oleh tim produksi kami hari ini.
 
-Nanti setelah pengerjaan selesai, kami akan kirimkan foto hasil jadinya terlebih dahulu sebelum pesanan diberangkatkan ke lokasi acara ya {{CUSTOMER_NAME}}." class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-base sm:text-lg"></pre>
+Nanti setelah pengerjaan selesai, kami akan kirimkan foto hasil jadinya terlebih dahulu sebelum pesanan diberangkatkan ke lokasi acara ya {{CUSTOMER_NAME}}." class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-xs sm:text-sm"></pre>
                             
                             <!-- Floating Copy Button -->
-                            <div class="absolute top-4 right-4 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                <button onclick="copyToClipboard('text-lunas', this)" class="px-4 py-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-2xl text-sm font-extrabold flex items-center gap-2 transition-all shadow-md">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                            <div class="absolute top-3 right-3 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                <button onclick="copyToClipboard('text-lunas', this)" class="px-3 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-xl text-xs font-extrabold flex items-center gap-1.5 transition-all shadow-md">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
                                     Salin Template
                                 </button>
                             </div>
@@ -760,38 +760,38 @@ Nanti setelah pengerjaan selesai, kami akan kirimkan foto hasil jadinya terlebih
                     </section>
 
                     <!-- TEMPLATE 11 — FOTO HASIL JADI -->
-                    <section id="sec-foto" data-category="transaksi" class="bg-white rounded-3xl p-6 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
-                        <div class="flex flex-wrap items-center justify-between gap-4 mb-4 pb-4 border-b border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <span class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-base">11</span>
+                    <section id="sec-foto" data-category="transaksi" class="bg-white rounded-2xl p-5 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-3 mb-3 pb-3 border-b border-slate-100">
+                            <div class="flex items-center gap-2.5">
+                                <span class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-sm">11</span>
                                 <div>
-                                    <h3 class="font-extrabold text-slate-900 text-lg">Foto Hasil Jadi</h3>
-                                    <p class="text-xs text-slate-500">Validasi fisik produk untuk memastikan kenyamanan sebelum dikirim</p>
+                                    <h3 class="font-extrabold text-slate-900 text-sm sm:text-base">Foto Hasil Jadi</h3>
+                                    <p class="text-[11px] text-slate-500">Validasi fisik produk untuk memastikan kenyamanan sebelum dikirim</p>
                                 </div>
                             </div>
-                            <span class="px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-extrabold rounded-full uppercase tracking-wider">Kategori: Transaksi</span>
+                            <span class="px-2.5 py-0.5 bg-emerald-50 text-emerald-700 text-[10px] font-extrabold rounded-full uppercase tracking-wider">Kategori: Transaksi</span>
                         </div>
 
                         <!-- Trigger Box -->
-                        <div class="mb-4 bg-amber-50 border border-amber-100 rounded-2xl p-4 flex items-center justify-between text-sm">
+                        <div class="mb-3 bg-amber-50 border border-amber-100 rounded-xl p-3 flex items-center justify-between text-xs">
                             <span class="text-slate-600 font-medium">Gunakan Quick Reply WA:</span>
-                            <code class="bg-amber-100 text-amber-800 px-3 py-1.5 rounded-xl font-bold font-mono">/foto</code>
+                            <code class="bg-amber-100 text-amber-800 px-2 py-1 rounded-lg font-bold font-mono">/foto</code>
                         </div>
 
                         <!-- Template Box -->
-                        <div class="relative bg-slate-50 rounded-2xl border border-slate-100 p-6 shadow-inner group">
+                        <div class="relative bg-slate-50 rounded-xl border border-slate-100 p-4 shadow-inner group">
                             <pre id="text-foto" data-template="Halo {{CUSTOMER_NAME}} 😊
 
 Berikut foto hasil jadi bunga papan pesanan {{CUSTOMER_NAME}}.
 
 Apabila semua tulisan dan desain sudah sesuai, pesanan akan segera kami berangkatkan bersama kurir ke lokasi acara.
 
-Terima kasih banyak telah mempercayakan representasi nama baik Anda kepada Kirimkirim Florist 🙏" class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-base sm:text-lg"></pre>
+Terima kasih banyak telah mempercayakan representasi nama baik Anda kepada Kirimkirim Florist 🙏" class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-xs sm:text-sm"></pre>
                             
                             <!-- Floating Copy Button -->
-                            <div class="absolute top-4 right-4 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                <button onclick="copyToClipboard('text-foto', this)" class="px-4 py-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-2xl text-sm font-extrabold flex items-center gap-2 transition-all shadow-md">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                            <div class="absolute top-3 right-3 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                <button onclick="copyToClipboard('text-foto', this)" class="px-3 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-xl text-xs font-extrabold flex items-center gap-1.5 transition-all shadow-md">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
                                     Salin Template
                                 </button>
                             </div>
@@ -799,36 +799,36 @@ Terima kasih banyak telah mempercayakan representasi nama baik Anda kepada Kirim
                     </section>
 
                     <!-- TEMPLATE 12 — FOLLOW UP CALON CUSTOMER -->
-                    <section id="sec-followup" data-category="pembuka" class="bg-white rounded-3xl p-6 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
-                        <div class="flex flex-wrap items-center justify-between gap-4 mb-4 pb-4 border-b border-slate-100">
-                            <div class="flex items-center gap-3">
-                                <span class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-base">12</span>
+                    <section id="sec-followup" data-category="pembuka" class="bg-white rounded-2xl p-5 border border-slate-100 shadow-md transition-all relative template-card hover:shadow-lg">
+                        <div class="flex flex-wrap items-center justify-between gap-3 mb-3 pb-3 border-b border-slate-100">
+                            <div class="flex items-center gap-2.5">
+                                <span class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-black text-sm">12</span>
                                 <div>
-                                    <h3 class="font-extrabold text-slate-900 text-lg">Follow Up Calon Customer</h3>
-                                    <p class="text-xs text-slate-500">Kirimkan 2 - 3 jam jika tidak ada jawaban tanpa terasa memaksa</p>
+                                    <h3 class="font-extrabold text-slate-900 text-sm sm:text-base">Follow Up Calon Customer</h3>
+                                    <p class="text-[11px] text-slate-500">Kirimkan 2 - 3 jam jika tidak ada jawaban tanpa terasa memaksa</p>
                                 </div>
                             </div>
-                            <span class="px-3 py-1 bg-violet-50 text-violet-700 text-xs font-extrabold rounded-full uppercase tracking-wider">Kategori: Follow Up</span>
+                            <span class="px-2.5 py-0.5 bg-violet-50 text-violet-700 text-[10px] font-extrabold rounded-full uppercase tracking-wider">Kategori: Follow Up</span>
                         </div>
 
                         <!-- Trigger Box -->
-                        <div class="mb-4 bg-amber-50 border border-amber-100 rounded-2xl p-4 flex items-center justify-between text-sm">
+                        <div class="mb-3 bg-amber-50 border border-amber-100 rounded-xl p-3 flex items-center justify-between text-xs">
                             <span class="text-slate-600 font-medium">Gunakan Quick Reply WA:</span>
-                            <code class="bg-amber-100 text-amber-800 px-3 py-1.5 rounded-xl font-bold font-mono">/followup</code>
+                            <code class="bg-amber-100 text-amber-800 px-2 py-1 rounded-lg font-bold font-mono">/followup</code>
                         </div>
 
                         <!-- Template Box -->
-                        <div class="relative bg-slate-50 rounded-2xl border border-slate-100 p-6 shadow-inner group">
+                        <div class="relative bg-slate-50 rounded-xl border border-slate-100 p-4 shadow-inner group">
                             <pre id="text-followup" data-template="Halo {{CUSTOMER_NAME}} 😊
 
 Saya follow up kembali untuk kebutuhan bunga papan Grand Opening yang sempat ditanyakan kemarin.
 
-Apabila masih diperlukan bantuan, saya siap membantu menyesuaikan desain maupun ukuran yang paling sesuai dengan kebutuhan acaranya ya {{CUSTOMER_NAME}} 🙏" class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-base sm:text-lg"></pre>
+Apabila masih diperlukan bantuan, saya siap membantu menyesuaikan desain maupun ukuran yang paling sesuai dengan kebutuhan acaranya ya {{CUSTOMER_NAME}} 🙏" class="whitespace-pre-wrap font-sans text-slate-700 leading-relaxed text-xs sm:text-sm"></pre>
                             
                             <!-- Floating Copy Button -->
-                            <div class="absolute top-4 right-4 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                                <button onclick="copyToClipboard('text-followup', this)" class="px-4 py-2.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-2xl text-sm font-extrabold flex items-center gap-2 transition-all shadow-md">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+                            <div class="absolute top-3 right-3 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                <button onclick="copyToClipboard('text-followup', this)" class="px-3 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200/50 rounded-xl text-xs font-extrabold flex items-center gap-1.5 transition-all shadow-md">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
                                     Salin Template
                                 </button>
                             </div>
@@ -842,261 +842,261 @@ Apabila masih diperlukan bantuan, saya siap membantu menyesuaikan desain maupun 
 
 
             <!-- VISUAL PIPELINE (SIKLUS ORDER YANG BENAR) -->
-            <section class="bg-emerald-950 text-white rounded-3xl p-6 border border-emerald-800 shadow-md space-y-4">
+            <section class="bg-emerald-950 text-white rounded-3xl p-5 border border-emerald-800 shadow-md space-y-3">
                 <div class="flex items-center gap-2">
-                    <span class="text-2xl">⚡</span>
-                    <h3 class="font-extrabold text-white text-lg">Siklus Penjualan & Alur Penawaran Yang Benar (Hybrid)</h3>
+                    <span class="text-xl">⚡</span>
+                    <h3 class="font-extrabold text-white text-base">Siklus Penjualan & Alur Penawaran Yang Benar (Hybrid)</h3>
                 </div>
                 <p class="text-xs text-emerald-200 leading-relaxed">
                     Jangan gunakan alur instan (Harga langsung meminta Transfer) karena merusak psikologi pembeli. Gunakan urutan langkah berbasis kurasi minim friksi:
                 </p>
-                <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-3 text-center pt-2">
-                    <div class="bg-emerald-900/60 p-3 rounded-xl border border-emerald-800">
-                        <div class="text-[10px] text-emerald-300 font-bold uppercase mb-1">Tahap 1</div>
-                        <div class="font-extrabold text-xs text-white">Greeting</div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-2.5 text-center pt-2">
+                    <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800">
+                        <div class="text-[9px] text-emerald-300 font-bold uppercase mb-0.5">Tahap 1</div>
+                        <div class="font-extrabold text-[11px] text-white">Greeting</div>
                     </div>
-                    <div class="bg-emerald-900/60 p-3 rounded-xl border border-emerald-800">
-                        <div class="text-[10px] text-emerald-300 font-bold uppercase mb-1">Tahap 2</div>
-                        <div class="font-extrabold text-xs text-white">Gali Info</div>
+                    <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800">
+                        <div class="text-[9px] text-emerald-300 font-bold uppercase mb-0.5">Tahap 2</div>
+                        <div class="font-extrabold text-[11px] text-white">Gali Info</div>
                     </div>
-                    <div class="bg-emerald-900/60 p-3 rounded-xl border border-emerald-800">
-                        <div class="text-[10px] text-emerald-300 font-bold uppercase mb-1">Tahap 3</div>
-                        <div class="font-extrabold text-xs text-white">Katalog</div>
+                    <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800">
+                        <div class="text-[9px] text-emerald-300 font-bold uppercase mb-0.5">Tahap 3</div>
+                        <div class="font-extrabold text-[11px] text-white">Katalog</div>
                     </div>
-                    <div class="bg-emerald-900/60 p-3 rounded-xl border border-emerald-800">
-                        <div class="text-[10px] text-emerald-300 font-bold uppercase mb-1">Tahap 4</div>
-                        <div class="font-extrabold text-xs text-white">Kurasi (2-3)</div>
+                    <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800">
+                        <div class="text-[9px] text-emerald-300 font-bold uppercase mb-0.5">Tahap 4</div>
+                        <div class="font-extrabold text-[11px] text-white">Kurasi (2-3)</div>
                     </div>
-                    <div class="bg-emerald-900/60 p-3 rounded-xl border border-emerald-800">
-                        <div class="text-[10px] text-emerald-300 font-bold uppercase mb-1">Tahap 5</div>
-                        <div class="font-extrabold text-xs text-white">Trust</div>
+                    <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800">
+                        <div class="text-[9px] text-emerald-300 font-bold uppercase mb-0.5">Tahap 5</div>
+                        <div class="font-extrabold text-[11px] text-white">Trust</div>
                     </div>
-                    <div class="bg-emerald-900/60 p-3 rounded-xl border border-emerald-800">
-                        <div class="text-[10px] text-emerald-300 font-bold uppercase mb-1">Tahap 6</div>
-                        <div class="font-extrabold text-xs text-white">Closing</div>
+                    <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800">
+                        <div class="text-[9px] text-emerald-300 font-bold uppercase mb-0.5">Tahap 6</div>
+                        <div class="font-extrabold text-[11px] text-white">Closing</div>
                     </div>
-                    <div class="bg-emerald-900/60 p-3 rounded-xl border border-emerald-800">
-                        <div class="text-[10px] text-emerald-300 font-bold uppercase mb-1">Tahap 7</div>
-                        <div class="font-extrabold text-xs text-white">Form Order</div>
+                    <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800">
+                        <div class="text-[9px] text-emerald-300 font-bold uppercase mb-0.5">Tahap 7</div>
+                        <div class="font-extrabold text-[11px] text-white">Form Order</div>
                     </div>
-                    <div class="bg-emerald-900/60 p-3 rounded-xl border border-emerald-800">
-                        <div class="text-[10px] text-emerald-300 font-bold uppercase mb-1">Tahap 8</div>
-                        <div class="font-extrabold text-xs text-white">Transfer</div>
+                    <div class="bg-emerald-900/60 p-2.5 rounded-xl border border-emerald-800">
+                        <div class="text-[9px] text-emerald-300 font-bold uppercase mb-0.5">Tahap 8</div>
+                        <div class="font-extrabold text-[11px] text-white">Transfer</div>
                     </div>
                 </div>
             </section>
 
             <!-- PLAYBOOK & SKENARIO HINDARI (12 GOLDEN RULES) -->
-            <section class="bg-rosewood-50 rounded-3xl p-6 border border-rosewood-200 shadow-md space-y-6">
-                <div class="flex items-center gap-3 pb-4 border-b border-rosewood-200">
-                    <span class="text-3xl">💡</span>
+            <section class="bg-rosewood-50 rounded-3xl p-5 border border-rosewood-200 shadow-md space-y-5">
+                <div class="flex items-center gap-2.5 pb-3 border-b border-rosewood-200">
+                    <span class="text-2xl">💡</span>
                     <div>
-                        <h3 class="font-black text-slate-900 text-lg">Playbook & 12 Aturan Emas Psikologi CS</h3>
-                        <p class="text-xs text-rosewood-700 font-bold uppercase tracking-wider">Sinergi Taktis Positioning Premium Florist</p>
+                        <h3 class="font-black text-slate-900 text-base">Playbook & 12 Aturan Emas Psikologi CS</h3>
+                        <p class="text-[11px] text-rosewood-700 font-bold uppercase tracking-wider">Sinergi Taktis Positioning Premium Florist</p>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                     
                     <!-- Rule 1: Ongkir -->
-                    <div class="bg-white rounded-2xl p-5 border border-rosewood-100 shadow-sm space-y-3">
-                        <div class="flex items-center gap-2">
-                            <span class="bg-rosewood-100 text-rosewood-700 px-2 py-0.5 rounded text-xs font-extrabold">ATURAN 1</span>
-                            <h4 class="font-extrabold text-slate-900 text-base">Jangan Cepat Sebut Ongkir</h4>
+                    <div class="bg-white rounded-xl p-4 border border-rosewood-100 shadow-sm space-y-2">
+                        <div class="flex items-center gap-1.5">
+                            <span class="bg-rosewood-100 text-rosewood-700 px-1.5 py-0.5 rounded text-[10px] font-extrabold">ATURAN 1</span>
+                            <h4 class="font-extrabold text-slate-900 text-sm">Jangan Cepat Sebut Ongkir</h4>
                         </div>
                         <p class="text-xs text-slate-500 leading-relaxed">Jangan gabungkan ongkir di awal saat ketertarikan belum terbentuk. Kirim desain dulu baru berikan opsi tarif kirim.</p>
-                        <div class="grid grid-cols-1 gap-2 pt-1 text-xs">
-                            <div class="bg-rosewood-50 p-3 rounded-xl border-l-4 border-rosewood-500 text-slate-700">
+                        <div class="grid grid-cols-1 gap-1.5 pt-1 text-xs">
+                            <div class="bg-rosewood-50 p-2.5 rounded-lg border-l-4 border-rosewood-500 text-slate-700">
                                 <span class="font-bold text-rosewood-700">❌ SALAH:</span> "Total 150 cm Rp850rb + Ongkir Rp100rb, total Rp950rb kak."
                             </div>
-                            <div class="bg-emerald-50 p-3 rounded-xl border-l-4 border-emerald-500 text-slate-700">
+                            <div class="bg-emerald-50 p-2.5 rounded-lg border-l-4 border-emerald-500 text-slate-700">
                                 <span class="font-bold text-emerald-700">✅ BENAR:</span> "Untuk lokasi Bekasi ada tambahan biaya pengiriman ya. Total untuk desain ini Rp950.000 termasuk pengiriman aman kami."
                             </div>
                         </div>
                     </div>
 
                     <!-- Rule 2: Price List -->
-                    <div class="bg-white rounded-2xl p-5 border border-rosewood-100 shadow-sm space-y-3">
-                        <div class="flex items-center gap-2">
-                            <span class="bg-rosewood-100 text-rosewood-700 px-2 py-0.5 rounded text-xs font-extrabold">ATURAN 2</span>
-                            <h4 class="font-extrabold text-slate-900 text-base">Jangan Kirim Price List Lengkap</h4>
+                    <div class="bg-white rounded-xl p-4 border border-rosewood-100 shadow-sm space-y-2">
+                        <div class="flex items-center gap-1.5">
+                            <span class="bg-rosewood-100 text-rosewood-700 px-1.5 py-0.5 rounded text-[10px] font-extrabold">ATURAN 2</span>
+                            <h4 class="font-extrabold text-slate-900 text-sm">Jangan Kirim Price List Lengkap</h4>
                         </div>
                         <p class="text-xs text-slate-500 leading-relaxed">Mengirim daftar harga sangat panjang di awal membuat pembeli berubah menjadi pembanding harga lalu menghilang.</p>
-                        <div class="grid grid-cols-1 gap-2 pt-1 text-xs">
-                            <div class="bg-rosewood-50 p-3 rounded-xl border-l-4 border-rosewood-500 text-slate-700">
+                        <div class="grid grid-cols-1 gap-1.5 pt-1 text-xs">
+                            <div class="bg-rosewood-50 p-2.5 rounded-lg border-l-4 border-rosewood-500 text-slate-700">
                                 <span class="font-bold text-rosewood-700">❌ SALAH:</span> Mengirim daftar tabel harga ukuran 120, 150, 180 secara mendetail di awal chat.
                             </div>
-                            <div class="bg-emerald-50 p-3 rounded-xl border-l-4 border-emerald-500 text-slate-700">
+                            <div class="bg-emerald-50 p-2.5 rounded-lg border-l-4 border-emerald-500 text-slate-700">
                                 <span class="font-bold text-emerald-700">✅ BENAR:</span> "Saya bantu rekomendasikan ukuran yang paling sesuai dengan kebutuhan acara Anda dulu ya 😊"
                             </div>
                         </div>
                     </div>
 
                     <!-- Rule 3: Anti-Kata "Murah" -->
-                    <div class="bg-white rounded-2xl p-5 border border-rosewood-100 shadow-sm space-y-3">
-                        <div class="flex items-center gap-2">
-                            <span class="bg-rosewood-100 text-rosewood-700 px-2 py-0.5 rounded text-xs font-extrabold">ATURAN 3</span>
-                            <h4 class="font-extrabold text-slate-900 text-base">Hindari Kata "Murah"</h4>
+                    <div class="bg-white rounded-xl p-4 border border-rosewood-100 shadow-sm space-y-2">
+                        <div class="flex items-center gap-1.5">
+                            <span class="bg-rosewood-100 text-rosewood-700 px-1.5 py-0.5 rounded text-[10px] font-extrabold">ATURAN 3</span>
+                            <h4 class="font-extrabold text-slate-900 text-sm">Hindari Kata "Murah"</h4>
                         </div>
                         <p class="text-xs text-slate-500 leading-relaxed">Kata murah merusak positioning premium hasil buatan baru Kirimkirim Florist.</p>
-                        <div class="grid grid-cols-1 gap-2 pt-1 text-xs">
-                            <div class="bg-rosewood-50 p-3 rounded-xl border-l-4 border-rosewood-500 text-slate-700">
+                        <div class="grid grid-cols-1 gap-1.5 pt-1 text-xs">
+                            <div class="bg-rosewood-50 p-2.5 rounded-lg border-l-4 border-rosewood-500 text-slate-700">
                                 <span class="font-bold text-rosewood-700">❌ SALAH:</span> "Harga murah kok, paling murah se-Jabodetabek."
                             </div>
-                            <div class="bg-emerald-50 p-3 rounded-xl border-l-4 border-emerald-500 text-slate-700">
+                            <div class="bg-emerald-50 p-2.5 rounded-lg border-l-4 border-emerald-500 text-slate-700">
                                 <span class="font-bold text-emerald-700">✅ BENAR:</span> "Pilihan value terbaik", "Paling banyak dipilih", "Paling sesuai kebutuhan."
                             </div>
                         </div>
                     </div>
 
                     <!-- Rule 4: Foto Nyata -->
-                    <div class="bg-white rounded-2xl p-5 border border-rosewood-100 shadow-sm space-y-3">
-                        <div class="flex items-center gap-2">
-                            <span class="bg-rosewood-100 text-rosewood-700 px-2 py-0.5 rounded text-xs font-extrabold">ATURAN 4</span>
-                            <h4 class="font-extrabold text-slate-900 text-base">Selalu Kirim Foto Nyata</h4>
+                    <div class="bg-white rounded-xl p-4 border border-rosewood-100 shadow-sm space-y-2">
+                        <div class="flex items-center gap-1.5">
+                            <span class="bg-rosewood-100 text-rosewood-700 px-1.5 py-0.5 rounded text-[10px] font-extrabold">ATURAN 4</span>
+                            <h4 class="font-extrabold text-slate-900 text-sm">Selalu Kirim Foto Nyata</h4>
                         </div>
                         <p class="text-xs text-slate-500 leading-relaxed">Kirim foto real-time hasil produksi sendiri, bukan mock-up Canva atau foto katalog studio yang tampak kaku.</p>
-                        <div class="grid grid-cols-1 gap-2 pt-1 text-xs">
-                            <div class="bg-rosewood-50 p-3 rounded-xl border-l-4 border-rosewood-500 text-slate-700">
+                        <div class="grid grid-cols-1 gap-1.5 pt-1 text-xs">
+                            <div class="bg-rosewood-50 p-2.5 rounded-lg border-l-4 border-rosewood-500 text-slate-700">
                                 <span class="font-bold text-rosewood-700">❌ SALAH:</span> Mengirim katalog digital bertuliskan grafis.
                             </div>
-                            <div class="bg-emerald-50 p-3 rounded-xl border-l-4 border-emerald-500 text-slate-700">
+                            <div class="bg-emerald-50 p-2.5 rounded-lg border-l-4 border-emerald-500 text-slate-700">
                                 <span class="font-bold text-emerald-700">✅ BENAR:</span> Kirim jepretan foto asli di workshop. Rasa percaya langsung meningkat drastis.
                             </div>
                         </div>
                     </div>
 
                     <!-- Rule 5: Pilihan Terbatas -->
-                    <div class="bg-white rounded-2xl p-5 border border-rosewood-100 shadow-sm space-y-3">
-                        <div class="flex items-center gap-2">
-                            <span class="bg-rosewood-100 text-rosewood-700 px-2 py-0.5 rounded text-xs font-extrabold">ATURAN 5</span>
-                            <h4 class="font-extrabold text-slate-900 text-base">Teknik "Pilihan Terbatas"</h4>
+                    <div class="bg-white rounded-xl p-4 border border-rosewood-100 shadow-sm space-y-2">
+                        <div class="flex items-center gap-1.5">
+                            <span class="bg-rosewood-100 text-rosewood-700 px-1.5 py-0.5 rounded text-[10px] font-extrabold">ATURAN 5</span>
+                            <h4 class="font-extrabold text-slate-900 text-sm">Teknik "Pilihan Terbatas"</h4>
                         </div>
                         <p class="text-xs text-slate-500 leading-relaxed">Customer kesulitan memilih di antara lusinan desain. Batasi pilihan menjadi 2-3 opsi terbaik.</p>
-                        <div class="grid grid-cols-1 gap-2 pt-1 text-xs">
-                            <div class="bg-rosewood-50 p-3 rounded-xl border-l-4 border-rosewood-500 text-slate-700">
+                        <div class="grid grid-cols-1 gap-1.5 pt-1 text-xs">
+                            <div class="bg-rosewood-50 p-2.5 rounded-lg border-l-4 border-rosewood-500 text-slate-700">
                                 <span class="font-bold text-rosewood-700">❌ SALAH:</span> "Silakan dipilih di katalog ya kak."
                             </div>
-                            <div class="bg-emerald-50 p-3 rounded-xl border-l-4 border-emerald-500 text-slate-700">
+                            <div class="bg-emerald-50 p-2.5 rounded-lg border-l-4 border-emerald-500 text-slate-700">
                                 <span class="font-bold text-emerald-700">✅ BENAR:</span> "Untuk acara Grand Opening biasanya customer memilih model Elegan atau Premium berikut. Lebih cocok tipe yang mana?"
                             </div>
                         </div>
                     </div>
 
                     <!-- Rule 6: Proaktif Trust -->
-                    <div class="bg-white rounded-2xl p-5 border border-rosewood-100 shadow-sm space-y-3">
-                        <div class="flex items-center gap-2">
-                            <span class="bg-rosewood-100 text-rosewood-700 px-2 py-0.5 rounded text-xs font-extrabold">ATURAN 6</span>
-                            <h4 class="font-extrabold text-slate-900 text-base">Jangan Tunggu Ditanya</h4>
+                    <div class="bg-white rounded-xl p-4 border border-rosewood-100 shadow-sm space-y-2">
+                        <div class="flex items-center gap-1.5">
+                            <span class="bg-rosewood-100 text-rosewood-700 px-1.5 py-0.5 rounded text-[10px] font-extrabold">ATURAN 6</span>
+                            <h4 class="font-extrabold text-slate-900 text-sm">Jangan Tunggu Ditanya</h4>
                         </div>
                         <p class="text-xs text-slate-500 leading-relaxed">Berikan jaminan proaktif berupa jepretan foto fisik pra-kirim begitu customer mulai tertarik dengan salah satu desain.</p>
-                        <div class="grid grid-cols-1 gap-2 pt-1 text-xs">
-                            <div class="bg-rosewood-50 p-3 rounded-xl border-l-4 border-rosewood-500 text-slate-700">
+                        <div class="grid grid-cols-1 gap-1.5 pt-1 text-xs">
+                            <div class="bg-rosewood-50 p-2.5 rounded-lg border-l-4 border-rosewood-500 text-slate-700">
                                 <span class="font-bold text-rosewood-700">❌ SALAH:</span> Hanya membalas pertanyaan teknis tanpa melampirkan keunggulan jaminan foto.
                             </div>
-                            <div class="bg-emerald-50 p-3 rounded-xl border-l-4 border-emerald-500 text-slate-700">
+                            <div class="bg-emerald-50 p-2.5 rounded-lg border-l-4 border-emerald-500 text-slate-700">
                                 <span class="font-bold text-emerald-700">✅ BENAR:</span> "Nanti sebelum dikirim kami kirimkan foto hasil jadinya terlebih dahulu ya Kak, jadi Kakak bisa memastikan tulisan & logo sudah sesuai."
                             </div>
                         </div>
                     </div>
 
                     <!-- Rule 7: Sapa Nama Personal -->
-                    <div class="bg-white rounded-2xl p-5 border border-rosewood-100 shadow-sm space-y-3">
-                        <div class="flex items-center gap-2">
-                            <span class="bg-rosewood-100 text-rosewood-700 px-2 py-0.5 rounded text-xs font-extrabold">ATURAN 7</span>
-                            <h4 class="font-extrabold text-slate-900 text-base">Sebut Nama Customer</h4>
+                    <div class="bg-white rounded-xl p-4 border border-rosewood-100 shadow-sm space-y-2">
+                        <div class="flex items-center gap-1.5">
+                            <span class="bg-rosewood-100 text-rosewood-700 px-1.5 py-0.5 rounded text-[10px] font-extrabold">ATURAN 7</span>
+                            <h4 class="font-extrabold text-slate-900 text-sm">Sebut Nama Customer</h4>
                         </div>
                         <p class="text-xs text-slate-500 leading-relaxed">Bila nama customer sudah diketahui, panggil namanya langsung. Hubungan personal menaikkan tingkat closing rate.</p>
-                        <div class="grid grid-cols-1 gap-2 pt-1 text-xs">
-                            <div class="bg-rosewood-50 p-3 rounded-xl border-l-4 border-rosewood-500 text-slate-700">
+                        <div class="grid grid-cols-1 gap-1.5 pt-1 text-xs">
+                            <div class="bg-rosewood-50 p-2.5 rounded-lg border-l-4 border-rosewood-500 text-slate-700">
                                 <span class="font-bold text-rosewood-700">❌ SALAH:</span> Selalu memanggil "Kak" tanpa peduli profil nama pembelinya.
                             </div>
-                            <div class="bg-emerald-50 p-3 rounded-xl border-l-4 border-emerald-500 text-slate-700">
+                            <div class="bg-emerald-50 p-2.5 rounded-lg border-l-4 border-emerald-500 text-slate-700">
                                 <span class="font-bold text-emerald-700">✅ BENAR:</span> "Baik Pak Budi 😊" atau "Siap Bu Rina 😊"
                             </div>
                         </div>
                     </div>
 
                     <!-- Rule 8: Batasi Emoji -->
-                    <div class="bg-white rounded-2xl p-5 border border-rosewood-100 shadow-sm space-y-3">
-                        <div class="flex items-center gap-2">
-                            <span class="bg-rosewood-100 text-rosewood-700 px-2 py-0.5 rounded text-xs font-extrabold">ATURAN 8</span>
-                            <h4 class="font-extrabold text-slate-900 text-base">Emoji Secara Profesional</h4>
+                    <div class="bg-white rounded-xl p-4 border border-rosewood-100 shadow-sm space-y-2">
+                        <div class="flex items-center gap-1.5">
+                            <span class="bg-rosewood-100 text-rosewood-700 px-1.5 py-0.5 rounded text-[10px] font-extrabold">ATURAN 8</span>
+                            <h4 class="font-extrabold text-slate-900 text-sm">Emoji Secara Profesional</h4>
                         </div>
                         <p class="text-xs text-slate-500 leading-relaxed">Target market Kirimkirim Florist banyak dari kalangan korporasi. Hindari emoji emosional yang berlebihan.</p>
-                        <div class="grid grid-cols-1 gap-2 pt-1 text-xs">
-                            <div class="bg-rosewood-50 p-3 rounded-xl border-l-4 border-rosewood-500 text-slate-700">
+                        <div class="grid grid-cols-1 gap-1.5 pt-1 text-xs">
+                            <div class="bg-rosewood-50 p-2.5 rounded-lg border-l-4 border-rosewood-500 text-slate-700">
                                 <span class="font-bold text-rosewood-700">❌ SALAH:</span> Mengirimkan emoji hati, cium, kelopak bunga bertebaran (🥰😍😘❤️🌸).
                             </div>
-                            <div class="bg-emerald-50 p-3 rounded-xl border-l-4 border-emerald-500 text-slate-700">
+                            <div class="bg-emerald-50 p-2.5 rounded-lg border-l-4 border-emerald-500 text-slate-700">
                                 <span class="font-bold text-emerald-700">✅ BENAR:</span> Batasi hanya pada: 😊 🙏 ✅ 📍 📅 demi wibawa brand profesional.
                             </div>
                         </div>
                     </div>
 
                     <!-- Rule 9: Follow Up Sopan -->
-                    <div class="bg-white rounded-2xl p-5 border border-rosewood-100 shadow-sm space-y-3">
-                        <div class="flex items-center gap-2">
-                            <span class="bg-rosewood-100 text-rosewood-700 px-2 py-0.5 rounded text-xs font-extrabold">ATURAN 9</span>
-                            <h4 class="font-extrabold text-slate-900 text-base">Seni Follow Up Halus</h4>
+                    <div class="bg-white rounded-xl p-4 border border-rosewood-100 shadow-sm space-y-2">
+                        <div class="flex items-center gap-1.5">
+                            <span class="bg-rosewood-100 text-rosewood-700 px-1.5 py-0.5 rounded text-[10px] font-extrabold">ATURAN 9</span>
+                            <h4 class="font-extrabold text-slate-900 text-sm">Seni Follow Up Halus</h4>
                         </div>
                         <p class="text-xs text-slate-500 leading-relaxed">Hindari memaksa dengan pertanyaan tertutup. Berikan tawaran solusi bantuan desain.</p>
-                        <div class="grid grid-cols-1 gap-2 pt-1 text-xs">
-                            <div class="bg-rosewood-50 p-3 rounded-xl border-l-4 border-rosewood-500 text-slate-700">
+                        <div class="grid grid-cols-1 gap-1.5 pt-1 text-xs">
+                            <div class="bg-rosewood-50 p-2.5 rounded-lg border-l-4 border-rosewood-500 text-slate-700">
                                 <span class="font-bold text-rosewood-700">❌ SALAH:</span> "Jadi pesan kak?" / "Bagaimana kelanjutan bunganya?"
                             </div>
-                            <div class="bg-emerald-50 p-3 rounded-xl border-l-4 border-emerald-500 text-slate-700">
+                            <div class="bg-emerald-50 p-2.5 rounded-lg border-l-4 border-emerald-500 text-slate-700">
                                 <span class="font-bold text-emerald-700">✅ BENAR:</span> "Saya follow up kembali untuk kebutuhan kemarin. Apabila masih diperlukan bantuan, saya siap bantu menyesuaikan model desainnya."
                             </div>
                         </div>
                     </div>
 
                     <!-- Rule 10: Jual Hasil Akhir (Value & Prestise) -->
-                    <div class="bg-white rounded-2xl p-5 border border-rosewood-100 shadow-sm space-y-3">
-                        <div class="flex items-center gap-2">
-                            <span class="bg-rosewood-100 text-rosewood-700 px-2 py-0.5 rounded text-xs font-extrabold">ATURAN 10</span>
-                            <h4 class="font-extrabold text-slate-900 text-base">Jual Hasil Akhirnya (Prestise)</h4>
+                    <div class="bg-white rounded-xl p-4 border border-rosewood-100 shadow-sm space-y-2">
+                        <div class="flex items-center gap-1.5">
+                            <span class="bg-rosewood-100 text-rosewood-700 px-1.5 py-0.5 rounded text-[10px] font-extrabold">ATURAN 10</span>
+                            <h4 class="font-extrabold text-slate-900 text-sm">Jual Hasil Akhirnya (Prestise)</h4>
                         </div>
                         <p class="text-xs text-slate-500 leading-relaxed">Jangan hanya menjual kayu papan dan tanaman. Jual nilai representasi dan kebanggaan nama baik pengirim di mata penerimanya.</p>
-                        <div class="grid grid-cols-1 gap-2 pt-1 text-xs">
-                            <div class="bg-rosewood-50 p-3 rounded-xl border-l-4 border-rosewood-500 text-slate-700">
+                        <div class="grid grid-cols-1 gap-1.5 pt-1 text-xs">
+                            <div class="bg-rosewood-50 p-2.5 rounded-lg border-l-4 border-rosewood-500 text-slate-700">
                                 <span class="font-bold text-rosewood-700">❌ SALAH:</span> "Ukuran papan sekian, bunga sekian ikat, pengerjaan seharian."
                             </div>
-                            <div class="bg-emerald-50 p-3 rounded-xl border-l-4 border-emerald-500 text-slate-700">
+                            <div class="bg-emerald-50 p-2.5 rounded-lg border-l-4 border-emerald-500 text-slate-700">
                                 <span class="font-bold text-emerald-700">✅ BENAR:</span> "Untuk Grand Opening, ukuran 150 cm sangat aman karena paling menonjol & terlihat sangat profesional mewakili nama perusahaan Anda."
                             </div>
                         </div>
                     </div>
 
-                    <!-- Rule 11: Cegah Choice Overload (NEW) -->
-                    <div class="bg-white rounded-2xl p-5 border border-rosewood-100 shadow-sm space-y-3">
-                        <div class="flex items-center gap-2">
-                            <span class="bg-rosewood-100 text-rosewood-700 px-2 py-0.5 rounded text-xs font-extrabold">ATURAN 11</span>
-                            <h4 class="font-extrabold text-slate-900 text-base">Choice Overload & Curation</h4>
+                    <!-- Rule 11: Cegah Choice Overload -->
+                    <div class="bg-white rounded-xl p-4 border border-rosewood-100 shadow-sm space-y-2">
+                        <div class="flex items-center gap-1.5">
+                            <span class="bg-rosewood-100 text-rosewood-700 px-1.5 py-0.5 rounded text-[10px] font-extrabold">ATURAN 11</span>
+                            <h4 class="font-extrabold text-slate-900 text-sm">Choice Overload & Curation</h4>
                         </div>
                         <p class="text-xs text-slate-500 leading-relaxed">Jangan biarkan pembeli membuka puluhan desain sendirian di katalog tanpa diarahkan. CS harus menjadi kurator aktif.</p>
-                        <div class="grid grid-cols-1 gap-2 pt-1 text-xs">
-                            <div class="bg-rosewood-50 p-3 rounded-xl border-l-4 border-rosewood-500 text-slate-700">
+                        <div class="grid grid-cols-1 gap-1.5 pt-1 text-xs">
+                            <div class="bg-rosewood-50 p-2.5 rounded-lg border-l-4 border-rosewood-500 text-slate-700">
                                 <span class="font-bold text-rosewood-700">❌ SALAH:</span> "Silakan lihat link katalog kami ya kak" (Lalu melepaskan begitu saja).
                             </div>
-                            <div class="bg-emerald-50 p-3 rounded-xl border-l-4 border-emerald-500 text-slate-700">
+                            <div class="bg-emerald-50 p-2.5 rounded-lg border-l-4 border-emerald-500 text-slate-700">
                                 <span class="font-bold text-emerald-700">✅ BENAR:</span> "Untuk acara Grand Opening di daerah tersebut, saya rekomendasikan 3 tipe terbaik yang paling banyak dipilih perusahaan."
                             </div>
                         </div>
                     </div>
 
-                    <!-- Rule 12: Kapan Tidak Perlu Kirim Foto (NEW) -->
-                    <div class="bg-white rounded-2xl p-5 border border-rosewood-100 shadow-sm space-y-3">
-                        <div class="flex items-center gap-2">
-                            <span class="bg-rosewood-100 text-rosewood-700 px-2 py-0.5 rounded text-xs font-extrabold">ATURAN 12</span>
-                            <h4 class="font-extrabold text-slate-900 text-base">Kapan Tidak Usah Kirim Foto?</h4>
+                    <!-- Rule 12: Kapan Tidak Perlu Kirim Foto -->
+                    <div class="bg-white rounded-xl p-4 border border-rosewood-100 shadow-sm space-y-2">
+                        <div class="flex items-center gap-1.5">
+                            <span class="bg-rosewood-100 text-rosewood-700 px-1.5 py-0.5 rounded text-[10px] font-extrabold">ATURAN 12</span>
+                            <h4 class="font-extrabold text-slate-900 text-sm">Kapan Tidak Usah Kirim Foto?</h4>
                         </div>
                         <p class="text-xs text-slate-500 leading-relaxed">Kurangi friksi dan percepat transaksi. Jika pembeli sudah datang membawa model spesifik, langsung layani closing.</p>
-                        <div class="grid grid-cols-1 gap-2 pt-1 text-xs">
-                            <div class="bg-rosewood-50 p-3 rounded-xl border-l-4 border-rosewood-500 text-slate-700">
+                        <div class="grid grid-cols-1 gap-1.5 pt-1 text-xs">
+                            <div class="bg-rosewood-50 p-2.5 rounded-lg border-l-4 border-rosewood-500 text-slate-700">
                                 <span class="font-bold text-rosewood-700">❌ SALAH:</span> Tetap mengirim paksa contoh foto lain padahal customer sudah menyebutkan kode desain spesifik dari web.
                             </div>
-                            <div class="bg-emerald-50 p-3 rounded-xl border-l-4 border-emerald-500 text-slate-700">
+                            <div class="bg-emerald-50 p-2.5 rounded-lg border-l-4 border-emerald-500 text-slate-700">
                                 <span class="font-bold text-emerald-700">✅ BENAR:</span> "Siap, untuk desain nomor 27 ukuran 150 cm langsung saya proses ya kak. Mohon bantu isi data kirim berikut..."
                             </div>
                         </div>
