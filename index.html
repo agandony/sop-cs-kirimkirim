@@ -762,412 +762,496 @@ Apabila masih diperlukan bantuan, saya siap membantu menyesuaikan desain maupun 
             <!-- ACCORDION CONTAINER -->
             <div class="space-y-4">
                 
-                <!-- CASE STUDY 1 -->
+                <!-- CASE STUDY 1 -->                
                 <div class="bg-white rounded-2xl border border-slate-150 shadow-sm overflow-hidden">
+                    
+                    <!-- ACCORDION HEADER: TOMBOL UTAMA UNTUK BUKA/TUTUP KONTEN -->
                     <button onclick="toggleAccordion('case-1-body', 'case-1-arrow')" class="w-full flex items-center justify-between p-5 text-left bg-slate-50 hover:bg-slate-100/70 transition-all outline-none">
                         <div class="flex items-center gap-3">
-                            <span class="w-7 h-7 bg-brand-100 text-brand-700 font-extrabold flex items-center justify-center rounded-lg text-xs">01</span>
+                            <!-- LABEL BADGE INDEKS NOMOR SKENARIO -->
+                            <span class="w-7 h-7 bg-brand-100 text-brand-700 font-extrabold flex items-center justify-center rounded-lg text-xs">10</span>
                             <div>
-                                <h3 class="font-extrabold text-slate-900 text-xs sm:text-sm">Kasus 1: Penjualan Bunga Papan Korporat (Lokasi Bekasi)</h3>
-                                <p class="text-[10px] text-slate-500">Contoh ideal CS memimpin alur transaksi, gali kebutuhan korporat, dan memberikan opsi</p>
+                                <!-- STRUKTUR JUDUL UTAMA DAN SUB-TEKS DESKRIPSI -->
+                                <h3 class="font-extrabold text-slate-900 text-xs sm:text-sm">Kasus 1: Teknik Value Balancing Harga, Add-on Validasi, & Timing Penggalian Nama</h3>
+                                <p class="text-[10px] text-slate-500">SOP komparasi nilai penawaran ongkos kirim tambahan Bekasi, integrasi gratis logo, dan eksekusi form closing</p>
                             </div>
                         </div>
+                        <!-- ICON PANAH INDIKATOR STATUS AKORDION -->
                         <span id="case-1-arrow" class="text-slate-400 transition-transform duration-200 transform">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
                         </span>
                     </button>
-
+                
+                    <!-- ACCORDION BODY: WRAPPER KONTEN UTAMA SIMULATOR & ANALISIS -->
                     <div id="case-1-body" class="hidden p-5 border-t border-slate-100 bg-white space-y-6">
-                        <!-- Chat Simulator -->
+                        
+                        <!-- ============================================================= -->
+                        <!-- START: AREA UTAMA CHAT SIMULATOR                              -->
+                        <!-- ============================================================= -->
                         <div class="space-y-3 max-w-3xl mx-auto">
-                            <!-- Bubble Customer -->
+                            
+                            <!-- BUBBLE CHAT: WELCOME MESSAGE OTOMATISASI SISTEM -->
+                            <div class="flex justify-end">
+                                <div class="max-w-[85%]">
+                                    <div class="bg-slate-50 border border-slate-200 rounded-2xl rounded-tr-none px-4 py-2.5 text-xs sm:text-sm">
+                                        <p class="font-extrabold text-[10px] text-slate-400 mb-0.5">🤖 SYSTEM WELCOME MESSAGE</p>
+                                        <div class="text-slate-600 leading-relaxed">
+                                            <p>Halo Kak 👋</p>
+                                            <p>Terima kasih sudah menghubungi Kirimkirim Florist 😊</p>
+                                            <p>Kami siap membantu kebutuhan bunga papan Kakak.</p>
+                                            <p class="text-[10px] text-slate-400 mt-1">😊 - BP04</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- BUBBLE CHAT: CUSTOMER 1 (Niat beli pertama kali masuk) -->
                             <div class="flex justify-start">
                                 <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
-                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 DEWI</p>
+                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
                                     <p class="text-slate-800 leading-relaxed">Halo, saya butuh bunga papan.</p>
                                 </div>
                             </div>
-
-                            <!-- Bubble CS 1 (Greeting & Kenalan) -->
+                
+                            <!-- BUBBLE CHAT: FAQ AUTOMATION RESPON BOT (Filter jenis acara) -->
+                            <div class="flex justify-end">
+                                <div class="max-w-[85%]">
+                                    <div class="bg-slate-50 border border-slate-200 rounded-2xl rounded-tr-none px-4 py-2.5 text-xs sm:text-sm">
+                                        <p class="font-extrabold text-[10px] text-slate-400 mb-0.5">🤖 FAQ AUTOMATION</p>
+                                        <div class="text-slate-600 leading-relaxed space-y-1">
+                                            <p>Baik Kak 😊 Dengan senang hati kami bantu.</p>
+                                            <p>Boleh saya tahu bunga papannya untuk acara apa ya Kak?</p>
+                                            <p>Biar kami bisa merekomendasikan ukuran dan desain yang paling cocok untuk acara Kakak 😊</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- BUBBLE CHAT: CUSTOMER 2 (Sebutkan jenis event) -->
+                            <div class="flex justify-start">
+                                <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
+                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                    <p class="text-slate-800 leading-relaxed">Grand Opening.</p>
+                                </div>
+                            </div>
+                
+                            <!-- BUBBLE CHAT: CS ARUMI 1 (Membangun hubungan emosional rapport & gali lokasi) -->
                             <div class="flex justify-end">
                                 <div class="relative group max-w-[85%]">
                                     <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
                                         <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
-                                        <div id="cs-1-1" class="text-slate-800 leading-relaxed space-y-1">
-                                            <p>Halo Kak 👋</p>
-                                            <p>Terima kasih sudah menghubungi Kirimkirim Florist 😊</p>
-                                            <p>Perkenalkan, saya Arumi yang akan membantu pesanan Kakak hari ini.</p>
-                                            <p>Boleh saya tahu dengan siapa saya berbicara? Agar saya bisa save kontak Kakak 😊</p>
+                                        <div id="cs-10-1" class="text-slate-800 leading-relaxed space-y-1">
+                                            <p>Wah, selamat ya Kak atas Grand Opening-nya 😊🎉</p>
+                                            <p>Semoga acaranya berjalan lancar dan sukses.</p>
+                                            <p>Boleh saya tahu lokasi pengirimannya di daerah mana ya Kak?</p>
                                         </div>
                                     </div>
-                                    <button onclick="copyBubbleText('cs-1-1', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    <!-- TOMBOL SALIN TEKS CHAT CS ARUMI 1 -->
+                                    <button onclick="copyBubbleText('cs-10-1', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
                                         📋
                                     </button>
                                 </div>
                             </div>
-
-                            <!-- Bubble Customer (Name Reply) -->
+                
+                            <!-- BUBBLE CHAT: CUSTOMER 3 (Sebutkan kota pengiriman) -->
                             <div class="flex justify-start">
                                 <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
-                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 DEWI</p>
-                                    <p class="text-slate-800 leading-relaxed">Saya Dewi.</p>
+                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                    <p class="text-slate-800 leading-relaxed">Bekasi.</p>
                                 </div>
                             </div>
-
-                            <!-- Bubble CS 1b (Gali Data Utama) -->
+                
+                            <!-- BUBBLE CHAT: CS ARUMI 2 (Konfirmasi area & gali limitasi deadline waktu) -->
                             <div class="flex justify-end">
                                 <div class="relative group max-w-[85%]">
                                     <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
                                         <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
-                                        <div id="cs-1-1b" class="text-slate-800 leading-relaxed space-y-1">
-                                            <p>Baik Kak Dewi, boleh dibantu informasinya:</p>
-                                            <p>📌 Untuk acara apa ya Kak?</p>
-                                            <p>📍 Lokasi pengirimannya di mana?</p>
-                                            <p>📅 Kapan dibutuhkan?</p>
+                                        <div id="cs-10-2" class="text-slate-800 leading-relaxed space-y-1">
+                                            <p>Siap Kak 😊 Untuk wilayah Bekasi masih bisa kami layani.</p>
+                                            <p>Kapan bunga papannya dibutuhkan ya Kak?</p>
                                         </div>
                                     </div>
-                                    <button onclick="copyBubbleText('cs-1-1b', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    <!-- TOMBOL SALIN TEKS CHAT CS ARUMI 2 -->
+                                    <button onclick="copyBubbleText('cs-10-2', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
                                         📋
                                     </button>
                                 </div>
                             </div>
-
-                            <!-- Bubble Customer (Info Reply) -->
+                
+                            <!-- BUBBLE CHAT: CUSTOMER 4 (Waktu target pengiriman besok pagi) -->
                             <div class="flex justify-start">
                                 <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
-                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 DEWI</p>
-                                    <div class="text-slate-800 leading-relaxed">
-                                        <p>Untuk grand opening.</p>
-                                        <p>Lokasinya di Bekasi.</p>
-                                        <p>Dibutuhkan besok pagi.</p>
-                                    </div>
+                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                    <p class="text-slate-800 leading-relaxed">Besok pagi.</p>
                                 </div>
                             </div>
-
-                            <!-- Bubble CS 2 -->
+                
+                            <!-- BUBBLE CHAT: CS ARUMI 3 (Konfirmasi kesiapan slot & gali profile target pembeli) -->
                             <div class="flex justify-end">
                                 <div class="relative group max-w-[85%]">
                                     <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
                                         <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
-                                        <div id="cs-1-2" class="text-slate-800 leading-relaxed space-y-1">
-                                            <p>Siap Kak Dewi 😊</p>
-                                            <p>Untuk Grand Opening di Bekasi besok pagi masih bisa kami bantu.</p>
-                                            <p>Apakah acara ini untuk perusahaan atau usaha pribadi Kak?</p>
+                                        <div id="cs-10-3" class="text-slate-800 leading-relaxed space-y-1">
+                                            <p>Baik Kak. Masih memungkinkan kami kirim besok pagi 😊</p>
+                                            <p>Kalau boleh tahu, bunga papan ini dikirim atas nama perusahaan atau usaha pribadi ya Kak?</p>
                                         </div>
                                     </div>
-                                    <button onclick="copyBubbleText('cs-1-2', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    <!-- TOMBOL SALIN TEKS CHAT CS ARUMI 3 -->
+                                    <button onclick="copyBubbleText('cs-10-3', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
                                         📋
                                     </button>
                                 </div>
                             </div>
-
-                            <!-- Bubble Customer -->
+                
+                            <!-- BUBBLE CHAT: CUSTOMER 5 (Profil atas nama corporate/perusahaan) -->
                             <div class="flex justify-start">
                                 <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
-                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 DEWI</p>
+                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
                                     <p class="text-slate-800 leading-relaxed">Perusahaan.</p>
                                 </div>
                             </div>
-
-                            <!-- Bubble CS 3 -->
+                
+                            <!-- BUBBLE CHAT: CS ARUMI 4 (Rekomendasi ukuran proporsional korporat & kirim katalog media) -->
                             <div class="flex justify-end">
                                 <div class="relative group max-w-[85%]">
                                     <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
                                         <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
-                                        <div id="cs-1-3" class="text-slate-800 leading-relaxed space-y-1">
-                                            <p>Baik Kak Dewi.</p>
-                                            <p>Untuk acara Grand Opening perusahaan biasanya customer memilih ukuran 150 cm atau 180 cm agar tampil lebih menonjol dan profesional di lokasi acara.</p>
-                                            <p>Boleh saya kirim beberapa contoh desain yang sering dipilih customer perusahaan?</p>
+                                        <div id="cs-10-4" class="text-slate-800 leading-relaxed space-y-1">
+                                            <p>Baik Kak 😊 Kalau untuk Grand Opening perusahaan, biasanya customer kami memilih ukuran 150 cm karena tampil lebih proporsional dan profesional di lokasi acara.</p>
+                                            <p>Saya pilihkan beberapa model yang paling sering digunakan perusahaan ya Kak 😊</p>
+                                        </div>
+                                        <!-- INDIKATOR LAMPIRAN FILE KATALOG MEDIA -->
+                                        <div class="space-y-0.5 italic text-slate-500 text-[11px] font-medium mt-1.5">
+                                            <p>[Kirim 3 foto ukuran 150]</p>
+                                            <p>[Kirim 2 foto ukuran 180]</p>
                                         </div>
                                     </div>
-                                    <button onclick="copyBubbleText('cs-1-3', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    <!-- TOMBOL SALIN TEKS CHAT CS ARUMI 4 -->
+                                    <button onclick="copyBubbleText('cs-10-4', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
                                         📋
                                     </button>
                                 </div>
                             </div>
-
-                            <!-- Bubble Customer -->
-                            <div class="flex justify-start">
-                                <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
-                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 DEWI</p>
-                                    <p class="text-slate-800 leading-relaxed">Boleh.</p>
-                                </div>
-                            </div>
-
-                            <!-- Bubble CS 4 -->
+                
+                            <!-- BUBBLE CHAT: CS ARUMI 5 (Pancing interaksi pemilihan alternatif model) -->
                             <div class="flex justify-end">
                                 <div class="relative group max-w-[85%]">
                                     <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
                                         <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
-                                        <p class="italic text-slate-500 text-[11px] font-medium">[Kirim 3 foto bunga papan ukuran 150]</p>
-                                        <p class="italic text-slate-500 text-[11px] font-medium">[Kirim 2 foto bunga papan ukuran 180]</p>
-                                        <div id="cs-1-4" class="text-slate-800 leading-relaxed space-y-2 mt-1">
-                                            <p>Untuk Grand Opening perusahaan, model seperti ini cukup banyak dipilih karena tampil elegan dan tetap profesional 😊</p>
-                                            <p>Dari beberapa contoh di atas, Kak Dewi lebih suka yang mana?</p>
+                                        <div id="cs-10-5" class="text-slate-800 leading-relaxed space-y-1">
+                                            <p>Kelima model ini cukup sering dipilih untuk acara Grand Opening perusahaan.</p>
+                                            <p>Kalau Kakak lebih suka model yang mana ya? 😊</p>
                                         </div>
                                     </div>
-                                    <button onclick="copyBubbleText('cs-1-4', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    <!-- TOMBOL SALIN TEKS CHAT CS ARUMI 5 -->
+                                    <button onclick="copyBubbleText('cs-10-5', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
                                         📋
                                     </button>
                                 </div>
                             </div>
-
-                            <!-- Bubble Customer -->
+                
+                            <!-- BUBBLE CHAT: CUSTOMER 6 (Pembeli memilih alternatif model nomor 2) -->
                             <div class="flex justify-start">
                                 <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
-                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 DEWI</p>
-                                    <p class="text-slate-800 leading-relaxed">Yang nomor 2 bagus.</p>
+                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                    <p class="text-slate-800 leading-relaxed">Saya suka nomor 2.</p>
                                 </div>
                             </div>
-
-                            <!-- Bubble CS 5 -->
+                
+                            <!-- BUBBLE CHAT: CS ARUMI 6 (Validasi kelebihan model nomor 2) -->
                             <div class="flex justify-end">
                                 <div class="relative group max-w-[85%]">
                                     <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
                                         <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
-                                        <div id="cs-1-5" class="text-slate-800 leading-relaxed space-y-1.5">
-                                            <p>Pilihan yang bagus Kak Dewi 😊</p>
-                                            <p>Model nomor 2 menggunakan ukuran 150 cm.</p>
-                                            <p>Ukuran ini memang paling banyak dipilih untuk Grand Opening karena tampil besar namun tetap proporsional.</p>
-                                            <p>Sebagai informasi:</p>
-                                            <p>✅ Semua papan dibuat baru dari awal</p>
+                                        <div id="cs-10-6" class="text-slate-800 leading-relaxed space-y-1">
+                                            <p>Pilihan yang bagus Kak 😊 Model nomor 2 memang menjadi salah satu favorit customer perusahaan.</p>
+                                            <p>Selain tampil elegan, ukuran 150 cm juga terlihat proporsional saat dipasang di lokasi acara.</p>
+                                        </div>
+                                    </div>
+                                    <!-- TOMBOL SALIN TEKS CHAT CS ARUMI 6 -->
+                                    <button onclick="copyBubbleText('cs-10-6', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                        📋
+                                    </button>
+                                </div>
+                            </div>
+                
+                            <!-- BUBBLE CHAT: CUSTOMER 7 (Menanyakan detail harga model terpilih) -->
+                            <div class="flex justify-start">
+                                <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
+                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                    <p class="text-slate-800 leading-relaxed">Kalau model itu harganya berapa?</p>
+                                </div>
+                            </div>
+                
+                            <!-- LABEL STRATEGI VISUAL DI LAYAR: TEKNIK VALUE BALANCING SETELAH TANYA HARGA -->
+                            <div class="flex justify-end my-1">
+                                <span class="px-2.5 py-1 bg-blue-50 text-blue-700 border border-blue-100 rounded-lg text-[11px] font-medium shadow-xs">
+                                    💡 <strong>Taktik Value-Balancing:</strong> Sampaikan breakdown harga + ongkir tambahan secara terbuka, lalu langsung kawal dengan 5 pilar USP garansi visual agar nominal harga terasa ringan.
+                                </span>
+                            </div>
+                
+                            <!-- BUBBLE CHAT: CS ARUMI 7 (Rincian harga + penambahan ongkir Bekasi & bundling 5 pilar value USP) -->
+                            <div class="flex justify-end">
+                                <div class="relative group max-w-[85%]">
+                                    <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
+                                        <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
+                                        <div id="cs-10-7" class="text-slate-800 leading-relaxed space-y-1.5">
+                                            <p>Untuk model tersebut harganya Rp700.000 ya Kak.</p>
+                                            <p>Karena lokasi pengiriman di Bekasi, ada tambahan biaya pengiriman sesuai jarak dari workshop kami. Jadi totalnya menjadi Rp800.000 termasuk pengiriman ke lokasi acara.</p>
+                                            <p class="pt-0.5 font-bold text-slate-900">Oh iya Kak, sebagai informasi... Harga tersebut sudah termasuk:</p>
+                                            <p>✅ Bunga papan dibuat baru dari awal</p>
                                             <p>✅ Bukan papan bekas yang didesain ulang</p>
+                                            <p>✅ Tulisan dicetak rapi sesuai pesanan</p>
                                             <p>✅ Bisa tambah logo perusahaan</p>
                                             <p>✅ Foto hasil jadi sebelum pengiriman</p>
+                                            <p class="pt-0.5 text-[11px] text-brand-900 font-medium">Jadi sebelum papan berangkat, Kakak bisa memastikan terlebih dahulu bahwa tulisan, logo, dan desainnya sudah sesuai 😊</p>
                                         </div>
                                     </div>
-                                    <button onclick="copyBubbleText('cs-1-5', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    <!-- TOMBOL SALIN TEKS CHAT CS ARUMI 7 -->
+                                    <button onclick="copyBubbleText('cs-10-7', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
                                         📋
                                     </button>
                                 </div>
                             </div>
-
-                            <!-- Bubble Customer -->
+                
+                            <!-- BUBBLE CHAT: CUSTOMER 8 (Pertanyaan penegasan penambahan logo eksternal) -->
                             <div class="flex justify-start">
                                 <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
-                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 DEWI</p>
-                                    <p class="text-slate-800 leading-relaxed">Kalau yang itu harganya berapa?</p>
-                                </div>
-                            </div>
-
-                            <!-- Bubble CS 6 -->
-                            <div class="flex justify-end">
-                                <div class="relative group max-w-[85%]">
-                                    <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
-                                        <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
-                                        <div id="cs-1-6" class="text-slate-800 leading-relaxed space-y-1">
-                                            <p>Untuk model tersebut harga Rp700.000 Kak Dewi.</p>
-                                            <p>Karena lokasi pengiriman di Bekasi, ada tambahan biaya pengiriman sesuai jarak dari workshop kami.</p>
-                                            <p>Total menjadi Rp800.000 termasuk pengiriman.</p>
-                                        </div>
-                                    </div>
-                                    <button onclick="copyBubbleText('cs-1-6', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
-                                        📋
-                                    </button>
-                                </div>
-                            </div>
-
-                            <!-- Bubble Customer -->
-                            <div class="flex justify-start">
-                                <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
-                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 DEWI</p>
+                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
                                     <p class="text-slate-800 leading-relaxed">Bisa tambah logo perusahaan?</p>
                                 </div>
                             </div>
-
-                            <!-- Bubble CS 7 -->
-                            <div class="flex justify-end">
-                                <div class="relative group max-w-[85%] font-medium">
-                                    <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
-                                        <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
-                                        <div id="cs-1-7" class="text-slate-800 leading-relaxed space-y-1">
-                                            <p>Bisa Kak Dewi 😊</p>
-                                            <p>Logo perusahaan dapat kami tambahkan tanpa biaya tambahan.</p>
-                                            <p>Nanti cukup kirim file logo melalui WhatsApp.</p>
-                                        </div>
-                                    </div>
-                                    <button onclick="copyBubbleText('cs-1-7', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
-                                        📋
-                                    </button>
-                                </div>
-                            </div>
-
-                            <!-- Bubble Customer -->
-                            <div class="flex justify-start">
-                                <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
-                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 DEWI</p>
-                                    <p class="text-slate-800 leading-relaxed">Kalau jadi seperti apa nanti?</p>
-                                </div>
-                            </div>
-
-                            <!-- Bubble CS 8 -->
+                
+                            <!-- BUBBLE CHAT: CS ARUMI 8 (Konfirmasi kebebasan add-on gratis biaya pasang logo) -->
                             <div class="flex justify-end">
                                 <div class="relative group max-w-[85%]">
                                     <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
                                         <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
-                                        <div id="cs-1-8" class="text-slate-800 leading-relaxed space-y-1">
-                                            <p>Sebelum dikirim, kami akan mengirimkan foto hasil jadinya terlebih dahulu. Jadi Kak Dewi bisa memastikan.</p>
-                                            <p>✅ Tulisan benar</p>
-                                            <p>✅ Nama pengirim benar</p>
-                                            <p>✅ Model papan benar</p
+                                        <div id="cs-10-8" class="text-slate-800 leading-relaxed space-y-1">
+                                            <p>Bisa sekali Kak 😊 Logo perusahaan kami tambahkan tanpa biaya tambahan.</p>
+                                            <p>Nanti cukup kirim file logonya melalui WhatsApp ya Kak.</p>
                                         </div>
                                     </div>
-                                    <button onclick="copyBubbleText('cs-1-8', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    <!-- TOMBOL SALIN TEKS CHAT CS ARUMI 8 -->
+                                    <button onclick="copyBubbleText('cs-10-8', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
                                         📋
                                     </button>
                                 </div>
                             </div>
-
-                            <!-- Bubble Customer -->
+                
+                            <!-- BUBBLE CHAT: CUSTOMER 9 (Tanya kepastian kontrol wujud hasil akhir produksi) -->
                             <div class="flex justify-start">
                                 <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
-                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 DEWI</p>
-                                    <p class="text-slate-800 leading-relaxed">Oke. Kalau saya mau pesan apa saja yang dibutuhkan?</p>
+                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                    <p class="text-slate-800 leading-relaxed">Kalau hasil jadinya bagaimana?</p>
                                 </div>
                             </div>
-
-                            <!-- Bubble CS 9 -->
+                
+                            <!-- BUBBLE CHAT: CS ARUMI 9 (Garansi pengiriman visual foto real sebelum kirim & jaminan revisi) -->
                             <div class="flex justify-end">
-                                <div class="relative group max-w-[85%] font-medium">
+                                <div class="relative group max-w-[85%]">
                                     <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
                                         <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
-                                        <div id="cs-1-9" class="text-slate-800 leading-relaxed space-y-1">
-                                            <p>Siap Kak Dewi 😊</p>
-                                            <p>Mohon kirim data berikut:</p>
-                                            <p>📌 Nama Pengirim di Papan</p>
+                                        <div id="cs-10-9" class="text-slate-800 leading-relaxed space-y-1">
+                                            <p>Sebelum dikirim, kami akan mengirimkan foto hasil jadinya terlebih dahulu ya Kak 😊</p>
+                                            <p>Kalau ada tulisan atau posisi logo yang perlu disesuaikan, kami akan bantu revisi terlebih dahulu sebelum dikirim ke lokasi acara.</p>
+                                        </div>
+                                    </div>
+                                    <!-- TOMBOL SALIN TEKS CHAT CS ARUMI 9 -->
+                                    <button onclick="copyBubbleText('cs-10-9', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                        📋
+                                    </button>
+                                </div>
+                            </div>
+                
+                            <!-- BUBBLE CHAT: CUSTOMER 10 (Sinyal beli kuat - Tanya kelengkapan berkas order) -->
+                            <div class="flex justify-start">
+                                <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
+                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                    <p class="text-slate-800 font-semibold text-brand-800">Baik. Kalau saya jadi pesan apa saja yang dibutuhkan?</p>
+                                </div>
+                            </div>
+                
+                            <!-- LABEL STRATEGI VISUAL DI LAYAR: TIMING TANYA NAMA CUSTOMER -->
+                            <div class="flex justify-end my-1">
+                                <span class="px-2.5 py-1 bg-blue-50 text-blue-700 border border-blue-100 rounded-lg text-[11px] font-medium shadow-xs">
+                                    💡 <strong>Timing Gali Nama:</strong> Pertanyaan nama pembeli sengaja ditaruh di pertengahan/akhir setelah *intent* minat customer terbukti serius, agar terasa akrab (bukan kaku di awal).
+                                </span>
+                            </div>
+                
+                            <!-- BUBBLE CHAT: CS ARUMI 10 (Gali identitas personal customer sebelum lempar formulir) -->
+                            <div class="flex justify-end">
+                                <div class="relative group max-w-[85%]">
+                                    <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
+                                        <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
+                                        <div id="cs-10-10" class="text-slate-800 leading-relaxed space-y-1">
+                                            <p>Siap Kak Pak 😊 Supaya saya bisa mencatat pesanannya dengan benar, boleh saya tahu nama Kakak?</p>
+                                        </div>
+                                    </div>
+                                    <!-- TOMBOL SALIN TEKS CHAT CS ARUMI 10 -->
+                                    <button onclick="copyBubbleText('cs-10-10', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                        📋
+                                    </button>
+                                </div>
+                            </div>
+                
+                            <!-- BUBBLE CHAT: CUSTOMER 11 (Menyebutkan nama) -->
+                            <div class="flex justify-start">
+                                <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
+                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                    <p class="text-slate-800 leading-relaxed">Dewi.</p>
+                                </div>
+                            </div>
+                
+                            <!-- BUBBLE CHAT: CS ARUMI 11 (Penyebutan nama akrab Kak Dewi & pemberian format isian order) -->
+                            <div class="flex justify-end">
+                                <div class="relative group max-w-[85%]">
+                                    <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
+                                        <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
+                                        <div id="cs-10-11" class="text-slate-800 leading-relaxed space-y-1.5">
+                                            <p>Baik Kak Dewi 😊 Mohon dibantu mengirimkan data berikut ya:</p>
+                                            <p>📌 Nama pengirim</p>
                                             <p>📌 Ucapan yang ingin ditulis</p>
                                             <p>📌 Alamat lengkap pengiriman</p>
                                             <p>📌 Jam acara</p>
                                             <p>📌 Logo perusahaan (jika ada)</p>
+                                            <p class="pt-0.5 text-[11px] text-slate-600">Nanti saya bantu cek kembali agar semuanya sesuai sebelum diproduksi.</p>
                                         </div>
                                     </div>
-                                    <button onclick="copyBubbleText('cs-1-9', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    <!-- TOMBOL SALIN TEKS CHAT CS ARUMI 11 -->
+                                    <button onclick="copyBubbleText('cs-10-11', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
                                         📋
                                     </button>
                                 </div>
                             </div>
-
-                            <!-- Bubble Customer -->
+                
+                            <!-- BUBBLE CHAT: CUSTOMER 12 (Simulasi pengiriman kelengkapan berkas data form) -->
                             <div class="flex justify-start">
                                 <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
-                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 DEWI</p>
-                                    <p class="text-slate-800 italic leading-relaxed">[Nama dan data dikirim]</p>
+                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 KAK DEWI</p>
+                                    <p class="text-slate-800 italic leading-relaxed">[Data dikirim]</p>
                                 </div>
                             </div>
-
-                            <!-- Bubble CS 10 -->
+                
+                            <!-- BUBBLE CHAT: CS ARUMI 12 (Rangkuman final review nota tagihan order invoice) -->
                             <div class="flex justify-end">
                                 <div class="relative group max-w-[85%]">
                                     <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
                                         <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
-                                        <div id="cs-1-10" class="text-slate-800 leading-relaxed space-y-1">
-                                            <p>Terima kasih Kak Dewi.</p>
-                                            <p>Berikut ringkasan pesanan:</p>
-                                            <p>🪧 Bunga Papan Congratulations 150 cm</p>
-                                            <p>📍 Mega Mall Bekasi</p>
-                                            <p>🚚 Pengiriman besok jam 9 pagi</p>
+                                        <div id="cs-10-12" class="text-slate-800 leading-relaxed space-y-1">
+                                            <p>Terima kasih Kak Dewi 😊 Saya rangkum dulu pesanannya ya.</p>
+                                            <p>🪧 Bunga Papan Congratulations ukuran 150 cm</p>
+                                            <p>📍 Bekasi</p>
                                             <p>🏢 Tambah logo perusahaan</p>
-                                            <p>💰 Total Rp800.000</p>
-                                            <p>Apakah data sudah sesuai?</p>
+                                            <p>🚚 Pengiriman besok pagi</p>
+                                            <p class="font-bold text-slate-900">💰 Total Rp800.000</p>
+                                            <p class="pt-1">Kalau data di atas sudah sesuai, saya lanjutkan proses pesanannya ya Kak 😊</p>
                                         </div>
                                     </div>
-                                    <button onclick="copyBubbleText('cs-1-10', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    <!-- TOMBOL SALIN TEKS CHAT CS ARUMI 12 -->
+                                    <button onclick="copyBubbleText('cs-10-12', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
                                         📋
                                     </button>
                                 </div>
                             </div>
-
-                            <!-- Bubble Customer -->
+                
+                            <!-- BUBBLE CHAT: CUSTOMER 13 (Pernyataan data valid) -->
                             <div class="flex justify-start">
                                 <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
-                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 DEWI</p>
-                                    <p class="text-slate-800 leading-relaxed">Sudah.</p>
+                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 KAK DEWI</p>
+                                    <p class="text-slate-800 leading-relaxed">Sudah sesuai Kak.</p>
                                 </div>
                             </div>
-
-                            <!-- Bubble CS 11 -->
+                
+                            <!-- BUBBLE CHAT: CS ARUMI 13 (Instruksi detail nomor rekening pembayaran) -->
                             <div class="flex justify-end">
                                 <div class="relative group max-w-[85%]">
                                     <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
                                         <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
-                                        <div id="cs-1-11" class="text-slate-800 leading-relaxed space-y-1">
-                                            <p>Baik Kak Dewi 😊</p>
-                                            <p>Pesanan dapat langsung kami proses setelah pembayaran dikonfirmasi.</p>
-                                            <p>Berikut rekening pembayaran:</p>
-                                            <p>BCA 4070242929 a.n. Boentoro Halim</p>
-                                            <p>Mohon kirim bukti transfer setelah pembayaran ya Kak Dewi 🙏</p>
+                                        <div id="cs-10-13" class="text-slate-800 leading-relaxed space-y-1">
+                                            <p>Baik Kak Dewi 😊 Pesanan langsung kami jadwalkan untuk diproduksi setelah pembayaran dikonfirmasi.</p>
+                                            <p class="pt-0.5">Berikut rekening pembayarannya:</p>
+                                            <p class="font-mono bg-brand-200/50 px-2 py-0.5 rounded inline-block font-semibold">BCA 4070242929 a.n. Boentoro Halim</p>
+                                            <p class="pt-1">Setelah transfer, mohon kirimkan bukti pembayarannya ya Kak 🙏</p>
                                         </div>
                                     </div>
-                                    <button onclick="copyBubbleText('cs-1-11', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    <!-- TOMBOL SALIN TEKS CHAT CS ARUMI 13 -->
+                                    <button onclick="copyBubbleText('cs-10-13', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
                                         📋
                                     </button>
                                 </div>
                             </div>
-
-                            <!-- Bubble Customer -->
+                
+                            <!-- BUBBLE CHAT: CUSTOMER 14 (Simulasi lampiran bukti pembayaran) -->
                             <div class="flex justify-start">
                                 <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
-                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 DEWI</p>
+                                    <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 KAK DEWI</p>
                                     <p class="text-slate-800 italic leading-relaxed">[Transfer]</p>
                                 </div>
                             </div>
-
-                            <!-- Bubble CS 12 -->
+                
+                            <!-- BUBBLE CHAT: CS ARUMI 14 (Penerimaan dana dana & info antrean produksi masuk jadwal) -->
                             <div class="flex justify-end">
                                 <div class="relative group max-w-[85%]">
                                     <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
                                         <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
-                                        <div id="cs-1-12" class="text-slate-800 leading-relaxed space-y-1">
-                                            <p>Pembayaran sudah kami terima Kak Dewi ✅</p>
+                                        <div id="cs-10-14" class="text-slate-800 leading-relaxed space-y-1">
+                                            <p>Pembayaran sudah kami terima Kak Dewi ✅ Terima kasih banyak ya Kak 😊</p>
                                             <p>Pesanan langsung kami jadwalkan untuk diproduksi.</p>
-                                            <p>Nanti setelah selesai kami kirimkan foto hasil jadinya sebelum pengiriman 😊</p>
-                                            <p>Terima kasih sudah mempercayakan pesanan kepada Kirimirim Florist 🙏</p>
+                                            <p>Nanti setelah selesai, kami akan mengirimkan foto hasil jadinya terlebih dahulu sebelum berangkat ke lokasi acara.</p>
+                                            <p class="pt-0.5 font-medium text-brand-800">Terima kasih sudah mempercayakan kebutuhan bunga papan kepada Kirimkirim Florist 🙏🌸</p>
                                         </div>
                                     </div>
-                                    <button onclick="copyBubbleText('cs-1-12', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    <!-- TOMBOL SALIN TEKS CHAT CS ARUMI 14 -->
+                                    <button onclick="copyBubbleText('cs-10-14', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
                                         📋
                                     </button>
                                 </div>
                             </div>
+                
                         </div>
-
-                        <!-- Analysis Box -->
-                        <div class="p-4 bg-rosewood-50 rounded-xl border border-rosewood-200/60 mt-4 space-y-3">
-                            <h4 class="font-extrabold text-rosewood-800 text-xs sm:text-sm flex items-center gap-1.5">
-                                <span>⚠️</span> Poin Evaluasi Kritis dari Contoh Kasus di Atas:
+                        <!-- ============================================================= -->
+                        <!-- END: AREA UTAMA CHAT SIMULATOR                                -->
+                        <!-- ============================================================= -->
+                
+                        <!-- ============================================================= -->
+                        <!-- START: ANALYSIS & LESSON LEARNED BOX FOR TEAM CS              -->
+                        <!-- ============================================================= -->
+                        <div class="p-4 bg-emerald-50 rounded-xl border border-emerald-200 mt-4 space-y-3">
+                            <!-- JUDUL KOTAK EVALUASI DAN STRATEGI KASUS -->
+                            <h4 class="font-extrabold text-emerald-800 text-xs sm:text-sm flex items-center gap-1.5">
+                                <span>💡</span> Pelajaran Strategis Tim CS: Pola Integrasi Value & Timing Interaksi
                             </h4>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-                                <div class="space-y-2">
-                                    <p class="font-bold text-slate-800">❌ Hal-hal yang Berhasil Dihindari CS:</p>
-                                    <ul class="list-disc pl-4 space-y-1 text-slate-600">
-                                        <li><strong>Tidak bertanya:</strong> "Budgetnya berapa?" (Mengurangi kesan value & menempatkan diri sebagai alternatif murah).</li>
-                                        <li><strong>Tidak berkata:</strong> "Mau pesan desain yang mana?" (Menghindari choice overload, melainkan langsung menyodorkan kurasi terpilih).</li>
-                                        <li><strong>Tidak mendesak:</strong> "Jadi pesan atau tidak kak?" (Menjaga wibawa brand premium).</li>
+                                
+                                <!-- BLOK KIRI: STRATEGI BUNDLING HARGA DAN VALUE USP -->
+                                <div class="space-y-1.5 text-slate-700 text-[11px] leading-relaxed">
+                                    <p class="font-bold text-slate-900 text-xs mb-1">⚖️ Teknik Keseimbangan Nilai (Value Balancing):</p>
+                                    <p>Ketika customer menanyakan harga, Arumi tidak sekadar menyebutkan nominal nominal angka kaku atau rincian tambahan ongkos kirim wilayah Bekasi. Angka tersebut langsung diimbangi secara presisi dengan rangkaian jaminan kualitas visual:</p>
+                                    <ul class="list-disc pl-4 space-y-0.5 text-slate-600 mt-1">
+                                        <li>Papan 100% diproduksi baru, bukan hasil daur ulang bekas pakai.</li>
+                                        <li>Fasilitas add-on gratis pemasangan logo instansi korporat.</li>
+                                        <li>SOP hak kontrol visual foto hasil jadi + garansi revisi sebelum kirim.</li>
                                     </ul>
                                 </div>
-                                <div class="space-y-2">
-                                    <p class="font-bold text-emerald-800">✅ Tindakan Proaktif CS dalam Memimpin Percakapan:</p>
-                                    <div class="flex flex-wrap gap-1 font-extrabold text-[10px] uppercase text-emerald-700">
-                                        <span class="bg-emerald-100 px-2 py-0.5 rounded">1. Greeting & Kenalan</span>
-                                        <span class="text-slate-400">→</span>
-                                        <span class="bg-emerald-100 px-2 py-0.5 rounded">2. Gali Kebutuhan</span>
-                                        <span class="text-slate-400">→</span>
-                                        <span class="bg-emerald-100 px-2 py-0.5 rounded">3. Kirim Kurasi Relevan</span>
-                                        <span class="text-slate-400">→</span>
-                                        <span class="bg-emerald-100 px-2 py-0.5 rounded">4. Minta Memilih</span>
-                                        <span class="text-slate-400">→</span>
-                                        <span class="bg-emerald-100 px-2 py-0.5 rounded">5. Bangun Trust</span>
-                                        <span class="text-slate-400">→</span>
-                                        <span class="bg-emerald-100 px-2 py-0.5 rounded">6. Transaksi</span>
-                                    </div>
-                                    <p class="text-slate-600 leading-relaxed pt-1">
-                                        Pola proaktif memimpin percakapan inilah yang menghasilkan tingkat konversi closing jauh lebih tinggi dibandingkan CS pasif yang hanya membalas pesan seadanya.
+                                
+                                <!-- BLOK KANAN: TAKTIK PENEMPATAN MOMEN INTERAKSI PERSONAL -->
+                                <div class="space-y-1.5 text-slate-700 text-[11px] leading-relaxed">
+                                    <p class="font-bold text-brand-800 text-xs mb-1">⏱️ Optimalisasi Penempatan Waktu Gali Nama:</p>
+                                    <p>Arumi tidak meminta nama pembeli di awal chat operasional. Proses menanyakan nama baru dijalankan saat customer **terbukti menunjukkan minat beli serius** (setelah memilih model desain nomor 2).</p>
+                                    <p class="text-slate-600 mt-1 pt-1 border-t border-slate-200/60">
+                                        Pola penempatan ini menghindari kesan interogasi kaku atau form robotik di awal percakapan, sehingga transisi pengisian form pengerjaan di akhir terasa sangat bersahabat, akrab, dan meningkatkan persentase *closing rate*.
                                     </p>
                                 </div>
+                
                             </div>
                         </div>
+                        <!-- ============================================================= -->
+                        <!-- END: ANALYSIS & LESSON LEARNED BOX FOR TEAM CS                -->
+                        <!-- ============================================================= -->
+                
                     </div>
-                </div>
+                </div>                
 
                 <!-- CASE STUDY 2 -->
                 <div class="bg-white rounded-2xl border border-slate-150 shadow-sm overflow-hidden">
