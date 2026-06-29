@@ -2582,6 +2582,7 @@ Apabila masih diperlukan bantuan, saya siap membantu menyesuaikan desain maupun 
                     </div>
                 </div>
 
+                <!-- CASE STUDY 5 -->
                 <div class="bg-white rounded-2xl border border-slate-150 shadow-sm overflow-hidden">
     
                     <button onclick="toggleAccordion('case-5-body', 'case-5-arrow')" class="w-full flex items-center justify-between p-5 text-left bg-slate-50 hover:bg-slate-100/70 transition-all outline-none">
@@ -2971,6 +2972,7 @@ Apabila masih diperlukan bantuan, saya siap membantu menyesuaikan desain maupun 
                     </div>
                 </div>
 
+                <!-- CASE STUDY 6 -->
                 <div class="bg-white rounded-2xl border border-slate-150 shadow-sm overflow-hidden">
     
                     <button onclick="toggleAccordion('case-6-body', 'case-6-arrow')" class="w-full flex items-center justify-between p-5 text-left bg-slate-50 hover:bg-slate-100/70 transition-all outline-none">
@@ -3305,6 +3307,7 @@ Apabila masih diperlukan bantuan, saya siap membantu menyesuaikan desain maupun 
                     </div>
                 </div>
 
+                <!-- CASE STUDY 7 -->
                 <div class="bg-white rounded-2xl border border-slate-150 shadow-sm overflow-hidden">
     
                     <button onclick="toggleAccordion('case-7-body', 'case-7-arrow')" class="w-full flex items-center justify-between p-5 text-left bg-slate-50 hover:bg-slate-100/70 transition-all outline-none">
@@ -3775,6 +3778,416 @@ Apabila masih diperlukan bantuan, saya siap membantu menyesuaikan desain maupun 
                     </div>
                 </div> 
             </div>   
+
+            <!-- CASE STUDY 8 -->
+            <div class="bg-white rounded-2xl border border-slate-150 shadow-sm overflow-hidden">
+    
+                <!-- HEADER AKORDION: TOMBOL UTAMA CASE STUDY 8 -->
+                <button onclick="toggleAccordion('case-8-body', 'case-8-arrow')" class="w-full flex items-center justify-between p-5 text-left bg-slate-50 hover:bg-slate-100/70 transition-all outline-none">
+                    <div class="flex items-center gap-3">
+                        <!-- LABEL BADGE NOMOR SKENARIO -->
+                        <span class="w-7 h-7 bg-brand-100 text-brand-700 font-extrabold flex items-center justify-center rounded-lg text-xs">08</span>
+                        <div>
+                            <!-- JUDUL KASUS UTAMA DAN SUB-DESKRIPSI SKENARIO -->
+                            <h3 class="font-extrabold text-slate-900 text-xs sm:text-sm">Kasus 8: Menggunakan Assumptive Question & Ownership Effect (Soft Closing) — Arumi</h3>
+                            <p class="text-[10px] text-slate-500">Bagaimana Arumi mengarahkan customer secara halus tanpa memicu penolakan menggunakan teknik pengandaian visual</p>
+                        </div>
+                    </div>
+                    <!-- ICON PANAH INDIKATOR STATUS AKORDION -->
+                    <span id="case-8-arrow" class="text-slate-400 transition-transform duration-200 transform">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path></svg>
+                    </span>
+                </button>
+            
+                <!-- BODY AKORDION: AREA ISI KONTEN UTAMA YANG BISA DI-TOGGLE -->
+                <div id="case-8-body" class="hidden p-5 border-t border-slate-100 bg-white space-y-6">
+                    
+                    <!-- ============================================================= -->
+                    <!-- START: CHAT SIMULATOR AREA                                    -->
+                    <!-- ============================================================= -->
+                    <div class="space-y-3 max-w-3xl mx-auto">
+                        
+                        <!-- BUBBLE CHAT: CUSTOMER 1 (Pertanyaan pembuka dari pembeli) -->
+                        <div class="flex justify-start">
+                            <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
+                                <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                <p class="text-slate-800 leading-relaxed">Saya butuh bunga papan.</p>
+                            </div>
+                        </div>
+            
+                        <!-- LABEL TEKNIK CS: PENDEKATAN AWAL - TIDAK LANGSUNG JUALAN -->
+                        <div class="flex justify-end my-1">
+                            <span class="px-2 py-0.5 bg-blue-50 text-blue-600 rounded text-[10px] font-medium border border-blue-100">💡 Strategi: Pendek. Tidak langsung jualan.</span>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CS ARUMI 1 (Sapaan sopan & validasi awal area) -->
+                        <div class="flex justify-end">
+                            <div class="relative group max-w-[85%]">
+                                <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
+                                    <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
+                                    <div id="cs-8-1" class="text-slate-800 leading-relaxed space-y-1">
+                                        <p>Baik Kak 😊</p>
+                                        <p>Dengan senang hati kami bantu.</p>
+                                        <p>Untuk acara apa ya Kak? Dan dikirim ke daerah mana?</p>
+                                    </div>
+                                </div>
+                                <!-- TOMBOL COPY SCRIPT CHAT CS ARUMI 1 -->
+                                <button onclick="copyBubbleText('cs-8-1', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    📋
+                                </button>
+                            </div>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CUSTOMER 2 (Sebutkan lokasi spesifik) -->
+                        <div class="flex justify-start">
+                            <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
+                                <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                <p class="text-slate-800 leading-relaxed">Ciracas.</p>
+                            </div>
+                        </div>
+            
+                        <!-- LABEL TEKNIK CS: PROBING / MENGGALI KEBUTUHAN -->
+                        <div class="flex justify-end my-1">
+                            <span class="px-2 py-0.5 bg-blue-50 text-blue-600 rounded text-[10px] font-medium border border-blue-100">💡 Strategi: Menggali kebutuhan detail acara.</span>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CS ARUMI 2 (Konfirmasi cakupan pengiriman & tawarkan opsi acara) -->
+                        <div class="flex justify-end">
+                            <div class="relative group max-w-[85%]">
+                                <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
+                                    <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
+                                    <div id="cs-8-2" class="text-slate-800 leading-relaxed space-y-1">
+                                        <p>Siap Kak 😊</p>
+                                        <p>Ciracas masih masuk area pengiriman kami.</p>
+                                        <p>Untuk acaranya Grand Opening, Ucapan Selamat, atau acara lainnya ya Kak?</p>
+                                    </div>
+                                </div>
+                                <!-- TOMBOL COPY SCRIPT CHAT CS ARUMI 2 -->
+                                <button onclick="copyBubbleText('cs-8-2', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    📋
+                                </button>
+                            </div>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CUSTOMER 3 (Sebutkan jenis acara) -->
+                        <div class="flex justify-start">
+                            <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
+                                <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                <p class="text-slate-800 leading-relaxed">Grand Opening.</p>
+                            </div>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CS ARUMI 3 (Ucapan selamat & gali waktu pengiriman) -->
+                        <div class="flex justify-end">
+                            <div class="relative group max-w-[85%]">
+                                <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
+                                    <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
+                                    <div id="cs-8-3" class="text-slate-800 leading-relaxed space-y-1">
+                                        <p>Wah, selamat ya Kak 😊</p>
+                                        <p>Kapan rencana dikirimnya?</p>
+                                    </div>
+                                </div>
+                                <!-- TOMBOL COPY SCRIPT CHAT CS ARUMI 3 -->
+                                <button onclick="copyBubbleText('cs-8-3', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    📋
+                                </button>
+                            </div>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CUSTOMER 4 (Waktu pengiriman urgent besok pagi) -->
+                        <div class="flex justify-start">
+                            <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
+                                <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                <p class="text-slate-800 leading-relaxed">Besok pagi.</p>
+                            </div>
+                        </div>
+            
+                        <!-- LABEL TEKNIK CS: PRESENTASI PRODUK + VALUE ALASAN PROPORSIONAL -->
+                        <div class="flex justify-end my-1">
+                            <span class="px-2 py-0.5 bg-blue-50 text-blue-600 rounded text-[10px] font-medium border border-blue-100">💡 Strategi: Memberi alasan logis, bukan sekadar menyuruh beli yang mahal.</span>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CS ARUMI 4 (Konfirmasi slot ketersediaan & penawaran opsi list harga) -->
+                        <div class="flex justify-end">
+                            <div class="relative group max-w-[85%]">
+                                <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
+                                    <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
+                                    <div id="cs-8-4" class="text-slate-800 leading-relaxed space-y-1.5">
+                                        <p>Siap Kak. Masih memungkinkan kami kirim besok pagi 😊</p>
+                                        <p>Untuk Grand Opening biasanya customer memilih ukuran berikut:</p>
+                                        <p>✅ 120 × 200 — Rp600.000</p>
+                                        <p>✅ 150 × 200 — Rp750.000</p>
+                                        <p class="pt-0.5">Kalau lokasi pemasangan cukup strategis, ukuran 150 biasanya terlihat lebih proporsional.</p>
+                                    </div>
+                                </div>
+                                <!-- TOMBOL COPY SCRIPT CHAT CS ARUMI 4 -->
+                                <button onclick="copyBubbleText('cs-8-4', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    📋
+                                </button>
+                            </div>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CUSTOMER 5 (Fokus ke harga terendah) -->
+                        <div class="flex justify-start">
+                            <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
+                                <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                <p class="text-slate-800 leading-relaxed">Yang paling murah 600 ya?</p>
+                            </div>
+                        </div>
+            
+                        <!-- LABEL TEKNIK CS: TIMING USP (USP MASUK SETELAH TANYA HARGA) -->
+                        <div class="flex justify-end my-1">
+                            <span class="px-2 py-0.5 bg-blue-50 text-blue-600 rounded text-[10px] font-medium border border-blue-100">💡 Strategi: USP masuk tepat setelah customer bertanya harga (Bukan sebelum).</span>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CS ARUMI 5 (Validasi harga terendah + sisipan value USP kualitas pengerjaan) -->
+                        <div class="flex justify-end">
+                            <div class="relative group max-w-[85%]">
+                                <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
+                                    <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
+                                    <div id="cs-8-5" class="text-slate-800 leading-relaxed space-y-1.5">
+                                        <p>Betul Kak 😊 Ukuran 120 × 200 mulai dari Rp600.000.</p>
+                                        <p>Walaupun ukuran paling kecil, semua bunga papan kami tetap dibuat baru dari awal, bukan papan bekas yang didaur ulang. Tulisan juga dicetak menggunakan mesin sehingga hasilnya rapi dan mudah dibaca.</p>
+                                    </div>
+                                </div>
+                                <!-- TOMBOL COPY SCRIPT CHAT CS ARUMI 5 -->
+                                <button onclick="copyBubbleText('cs-8-5', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    📋
+                                </button>
+                            </div>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CUSTOMER 6 (Minta contoh visual) -->
+                        <div class="flex justify-start">
+                            <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
+                                <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                <p class="text-slate-800 leading-relaxed">Bisa lihat contohnya?</p>
+                            </div>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CS ARUMI 6 (Kirim file visual portofolio ukuran 120) -->
+                        <div class="flex justify-end">
+                            <div class="relative group max-w-[85%]">
+                                <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
+                                    <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
+                                    <div id="cs-8-6" class="text-slate-800 leading-relaxed space-y-1">
+                                        <p>Tentu Kak Kak 😊 Ini beberapa contoh ukuran 120 yang pernah kami kirim.</p>
+                                    </div>
+                                    <!-- INDIKATOR LAMPIRAN MEDIA -->
+                                    <p class="italic text-slate-500 text-[11px] font-medium mt-1.5">[Kirim 3 foto terbaik]</p>
+                                </div>
+                                <!-- TOMBOL COPY SCRIPT CHAT CS ARUMI 6 -->
+                                <button onclick="copyBubbleText('cs-8-6', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    📋
+                                </button>
+                            </div>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CUSTOMER 7 (Respon positif dari pembeli) -->
+                        <div class="flex justify-start">
+                            <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
+                                <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                <p class="text-slate-800 leading-relaxed">Bagus juga.</p>
+                            </div>
+                        </div>
+            
+                        <!-- LABEL TEKNIK CS: ASSUMPTIVE QUESTION (MENGHINDARI PERTANYAAN "JADI PESAN?") -->
+                        <div class="flex justify-end my-1">
+                            <span class="px-2 py-0.5 bg-blue-50 text-blue-600 rounded text-[10px] font-medium border border-blue-100">💡 Strategi: Assumptive Question (Mengajak membayangkan seolah sudah fix beli).</span>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CS ARUMI 7 (Aplikasi Assumptive Question - Menanyakan nama instansi pengirim) -->
+                        <div class="flex justify-end">
+                            <div class="relative group max-w-[85%]">
+                                <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
+                                    <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
+                                    <div id="cs-8-7" class="text-slate-800 leading-relaxed space-y-1">
+                                        <p>Terima kasih Kak 😊</p>
+                                        <p>Kalau boleh tahu, nama toko atau nama perusahaan yang akan ditulis di papan siapa ya?</p>
+                                    </div>
+                                </div>
+                                <!-- TOMBOL COPY SCRIPT CHAT CS ARUMI 7 -->
+                                <button onclick="copyBubbleText('cs-8-7', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    📋
+                                </button>
+                            </div>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CUSTOMER 8 (Pembeli langsung menjawab nama perusahaan tanpa sadar terpola closing) -->
+                        <div class="flex justify-start">
+                            <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
+                                <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                <p class="text-slate-800 leading-relaxed">PT Maju Jaya.</p>
+                            </div>
+                        </div>
+            
+                        <!-- LABEL TEKNIK CS: OWNERSHIP EFFECT (UJI TULIS LAYOUT GRATIS) -->
+                        <div class="flex justify-end my-1">
+                            <span class="px-2 py-0.5 bg-blue-50 text-blue-600 rounded text-[10px] font-medium border border-blue-100">💡 Strategi: Ownership Effect (Customer mulai merasa memiliki produk lewat layout custom).</span>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CS ARUMI 8 (Penawaran pembuatan preview sketsa layout tulisan gratis) -->
+                        <div class="flex justify-end">
+                            <div class="relative group max-w-[85%]">
+                                <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
+                                    <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
+                                    <div id="cs-8-8" class="text-slate-800 leading-relaxed space-y-1.5">
+                                        <p>Siap Kak. Berarti nanti tulisan utamanya PT Maju Jaya ya.</p>
+                                        <p>Kalau berkenan saya bisa buatkan contoh layout tulisan terlebih dahulu, tanpa biaya, supaya Kakak bisa membayangkan hasil akhirnya.</p>
+                                    </div>
+                                </div>
+                                <!-- TOMBOL COPY SCRIPT CHAT CS ARUMI 8 -->
+                                <button onclick="copyBubbleText('cs-8-8', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    📋
+                                </button>
+                            </div>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CUSTOMER 9 (Menyetujui pembuatan layout sketsa) -->
+                        <div class="flex justify-start">
+                            <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
+                                <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                <p class="text-slate-800 leading-relaxed">Boleh.</p>
+                            </div>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CS ARUMI 9 (Gali info nama pihak penerima papan bunga) -->
+                        <div class="flex justify-end">
+                            <div class="relative group max-w-[85%]">
+                                <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
+                                    <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
+                                    <div id="cs-8-9" class="text-slate-800 leading-relaxed space-y-1">
+                                        <p>Siap Kak 😊 Boleh sekalian minta nama penerimanya ya?</p>
+                                    </div>
+                                </div>
+                                <!-- TOMBOL COPY SCRIPT CHAT CS ARUMI 9 -->
+                                <button onclick="copyBubbleText('cs-8-9', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    📋
+                                </button>
+                            </div>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CUSTOMER 10 (Sebutkan nama pihak instansi penerima) -->
+                        <div class="flex justify-start">
+                            <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
+                                <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                <p class="text-slate-800 leading-relaxed">PT ABC.</p>
+                            </div>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CS ARUMI 10 (Set estimasi waktu pengerjaan desain layout digital) -->
+                        <div class="flex justify-end">
+                            <div class="relative group max-w-[85%]">
+                                <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
+                                    <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
+                                    <div id="cs-8-10" class="text-slate-800 leading-relaxed space-y-1">
+                                        <p>Baik Kak. Saya buatkan preview sekitar 10–15 menit ya 😊</p>
+                                    </div>
+                                </div>
+                                <!-- TOMBOL COPY SCRIPT CHAT CS ARUMI 10 -->
+                                <button onclick="copyBubbleText('cs-8-10', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    📋
+                                </button>
+                            </div>
+                        </div>
+            
+                        <!-- LABEL INDIKATOR STATUS PERUBAHAN WAKTU PROSES -->
+                        <div class="flex justify-center my-2">
+                            <span class="px-3 py-1 bg-slate-100 text-slate-500 rounded-full text-[10px] font-semibold tracking-wider uppercase">⏳ Setelah Preview Jadi</span>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CS ARUMI 11 (Kirim preview & berikan opsi hak revisi) -->
+                        <div class="flex justify-end">
+                            <div class="relative group max-w-[85%]">
+                                <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
+                                    <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
+                                    <!-- INDIKATOR MEDIA PREVIEW -->
+                                    <p class="italic text-slate-500 text-[11px] font-medium mb-1.5">[CS kirim berkas gambar preview layout]</p>
+                                    <div id="cs-8-11" class="text-slate-800 leading-relaxed space-y-1.5">
+                                        <p>Ini contoh layoutnya Kak 😊</p>
+                                        <p>Kalau ada nama atau tulisan yang ingin diubah masih bisa kami revisi sebelum diproduksi.</p>
+                                    </div>
+                                </div>
+                                <!-- TOMBOL COPY SCRIPT CHAT CS ARUMI 11 -->
+                                <button onclick="copyBubbleText('cs-8-11', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    📋
+                                </button>
+                            </div>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CUSTOMER 11 (Konfirmasi kecocokan visual layout) -->
+                        <div class="flex justify-start">
+                            <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
+                                <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                <p class="text-slate-800 leading-relaxed">Sudah cocok.</p>
+                            </div>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CS ARUMI 12 (Proses closing & penegasan batas pengamanan slot produksi) -->
+                        <div class="flex justify-end">
+                            <div class="relative group max-w-[85%]">
+                                <div class="bg-brand-100/70 rounded-2xl rounded-tr-none pl-4 pr-10 py-2.5 text-xs sm:text-sm">
+                                    <p class="font-extrabold text-[10px] text-brand-700 mb-0.5">👩‍💼 ARUMI (CS)</p>
+                                    <div id="cs-8-12" class="text-slate-800 leading-relaxed space-y-1.5">
+                                        <p>Siap Kak 😊 Kalau begitu kami bisa lanjut proses pesanannya.</p>
+                                        <p>Untuk mengamankan jadwal produksi besok pagi, Kakak cukup melakukan pembayaran terlebih dahulu.</p>
+                                        <p>Setelah pembayaran kami terima, papan langsung kami produksi dan sebelum dikirim akan kami foto terlebih dahulu untuk memastikan semuanya sesuai.</p>
+                                    </div>
+                                </div>
+                                <!-- TOMBOL COPY SCRIPT CHAT CS ARUMI 12 -->
+                                <button onclick="copyBubbleText('cs-8-12', this)" class="absolute right-2 top-2.5 p-1.5 bg-brand-200/60 hover:bg-brand-200 text-brand-800 rounded-lg opacity-100 md:opacity-0 group-hover:opacity-100 transition-all text-xs" title="Salin Jawaban CS">
+                                    📋
+                                </button>
+                            </div>
+                        </div>
+            
+                        <!-- BUBBLE CHAT: CUSTOMER 12 (Pernyataan deal / setuju) -->
+                        <div class="flex justify-start">
+                            <div class="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-2.5 max-w-[85%] text-xs sm:text-sm">
+                                <p class="font-extrabold text-[10px] text-slate-500 mb-0.5">👤 CUSTOMER</p>
+                                <p class="text-slate-800 leading-relaxed">Oke.</p>
+                            </div>
+                        </div>
+            
+                    </div>
+                    <!-- ============================================================= -->
+                    <!-- END: CHAT SIMULATOR AREA                                      -->
+                    <!-- ============================================================= -->
+            
+                    <!-- ============================================================= -->
+                    <!-- START: ANALYSIS & LESSON LEARNED BOX FOR TEAM CS              -->
+                    <!-- ============================================================= -->
+                    <div class="p-4 bg-emerald-50 rounded-xl border border-emerald-200 mt-4 space-y-3">
+                        <!-- HEADER ANALYSIS BOX -->
+                        <h4 class="font-extrabold text-emerald-800 text-xs sm:text-sm flex items-center gap-1.5">
+                            <span>💡</span> Analisis Pola Psikologi Penjualan (Assumptive & Ownership Effect)
+                        </h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+                            
+                            <!-- PANEL KIRI: LOGIKA TIMING USP & PERTANYAAN ASUMTIF -->
+                            <div class="space-y-2">
+                                <p class="font-bold text-slate-800">🎯 Pemicu Utama Konversi Transaksi:</p>
+                                <ul class="list-disc pl-4 space-y-1 text-slate-600 text-[11px]">
+                                    <li><strong>Timing USP yang Tepat:</strong> Arumi tidak memborbardir keunggulan toko di awal chat. Opsi kualitas (cetak mesin, bukan papan bekas) dimasukkan secara halus sebagai pembenaran nilai *justifikasi* tepat setelah customer menanyakan harga murah.</li>
+                                    <li><strong>Assumptive Question:</strong> Menghindari pertanyaan mentah seperti <span class="italic">"Jadi pesan?"</span> yang memicu otak berpikir menolak keuangan. CS langsung melompat ke pertanyaan pengandaian operasional: <span class="italic">"Nama toko yang mau ditulis siapa ya?"</span>.</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- PANEL KANAN: IMPLEMENTASI EFEK KEPEMILIKAN VISUAL -->
+                            <div class="space-y-2">
+                                <p class="font-bold text-brand-800">💎 Menciptakan "Ownership Effect" Melalui Layout:</p>
+                                <p class="text-slate-600 leading-relaxed text-[11px]">
+                                    Dengan menawarkan pembuatan sketsa layout tulisan digital gratis secara instan (10-15 menit), Arumi berhasil membuat customer secara psikologis **mulai merasa memiliki produk** tersebut sebelum uang ditransfer. 
+                                </p>
+                                <p class="text-slate-600 leading-relaxed text-[11px] pt-1 border-t border-slate-200/60">
+                                    Ketika visualisasi nama perusahaannya sudah terpampang rapi di draf mockup, hambatan transaksi runtuh dengan sendirinya, sehingga proses *closing* dan instruksi pembayaran di akhir berjalan sangat mulus tanpa penolakan.
+                                </p>
+                            </div>            
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            
 
             </div>
         </div>
